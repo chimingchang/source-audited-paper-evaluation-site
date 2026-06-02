@@ -27,63 +27,54 @@
 <section class="metrics">
 <div class="metric"><span>Ranked papers</span><strong>44</strong></div>
 <div class="metric"><span>Claim-level reports</span><strong>17</strong></div>
-<div class="metric"><span>Cap-bound rows</span><strong>3</strong></div>
-<div class="metric"><span>Active/immature rows</span><strong>22</strong></div>
-<div class="metric"><span>Withheld signal rows</span><strong>13</strong></div>
-<div class="metric"><span>Claim fate coverage</span><strong>61/72</strong></div>
+<div class="metric"><span>Release checks</span><strong>73</strong></div>
 </section>
 <section class="scope-note" aria-label="Scope note">
   <div>
     <p class="eyebrow">Scope</p>
-    <h2>Evaluation As A Testbed For Scientific Taste</h2>
-    <p>This site is an experiment in auditable AI-assisted research evaluation. The goal is to study how an AI system can learn scientific taste: recognizing deep, fertile contributions, separating real progress from authority or citation momentum, and using evaluation to ask better research questions.</p>
-    <p>Scores are not public consensus, formal peer review, citation rankings, or author-prestige judgments. They are source-audited evaluations tied to predecessor checks, claim fates, uncertainty bands, retrospective validation, and withheld calibration details.</p>
+    <h2>What This Site Is For</h2>
+    <p>This is an auditable AI-assisted research-evaluation experiment: use source evidence, predecessor checks, claim fates, and uncertainty to study scientific taste and better research questions.</p>
   </div>
   <a href="about.html">Motivation and public scope</a>
 </section>
 
-<section class="section" id="how-to-read-ranking">
-<div class="section-head"><p class="eyebrow">Reading guide</p><h2>How To Read This Ranking</h2></div>
-<div class="formula-grid">
-<article class="formula-box"><h3>Read score and band together</h3><p>A final score is not a single exact measurement. Adjacent rows with overlapping uncertainty bands should be treated as local rank clusters.</p></article>
-<article class="formula-box"><h3>Audit tags are part of the result</h3><p>Tags such as claim level, cap bound, cap sensitive, cluster order sensitive, and the withheld-signal tag constrain how a row should be interpreted.</p></article>
-<article class="formula-box"><h3>Paper scores may hide mixed claims</h3><p>A paper can contain validated, unresolved, diagnostic, and invalidated claims at the same time; claim-level pages expose those splits when needed.</p></article>
-<article class="formula-box"><h3>Not popularity or authority</h3><p>The ranking is not based on citation count, author prestige, venue, or later fame. Scores must stand on source audit, predecessor checks, and public evidence; withheld provenance is not public consensus and must not directly determine the ranking score.</p></article>
-</div></section>
+<section class="section orientation-strip" id="how-to-read-ranking">
+  <div class="section-head"><p class="eyebrow">Reading guide</p><h2>Read In Three Rules</h2></div>
+  <ul class="compact-list orientation-list">
+    <li><strong>Score plus band.</strong> Adjacent rows with overlapping uncertainty bands should be read as local clusters, not exact total order.</li>
+    <li><strong>Tags matter.</strong> Audit tags such as claim level, cap bound, cap sensitive, cluster order sensitive, and the withheld-signal tag constrain interpretation.</li>
+    <li><strong>Not popularity.</strong> Scores are source-audited contribution judgments, not citation count, author prestige, venue, later fame, or hidden consensus; withheld provenance is not public consensus and must not directly determine the ranking score.</li>
+  </ul>
+</section>
+
 <section class="reading-map" aria-label="Evaluation map">
 <div class="section-head"><p class="eyebrow">Evaluation map</p><h2>Primary Paths</h2></div>
 <div class="reading-grid">
 <article class="reading-card">
-<h3>Ranking Table</h3>
-<p>Scores appear with rank, uncertainty band, maturity state, source sufficiency, claim fate, and audit tags.</p>
-<a href="#ranking">View ranking</a>
+<h3>Results</h3>
+<p>Scan the ranked table, then open a paper row for its report, source audit, evidence pack, and nearby comparisons.</p>
+<a href="#ranking">View table</a>
 </article>
 <article class="reading-card">
-<h3>Paper Hubs</h3>
-<p>Each paper page connects the scoring report, source audit, evidence pack, withheld-signal status when present, and nearby rank comparisons.</p>
-<a href="papers/hep-th_9711200.html">Open rank 1 paper</a>
-</article>
-<article class="reading-card">
-<h3>Guardrail Pages</h3>
-<p>Dedicated audit pages track uncertainty, robustness, withheld-signal policy, claim fates, source audits, and evidence packs.</p>
-<a href="audits.html">Review guardrails</a>
-</article>
-<article class="reading-card">
-<h3>Rank Neighbors</h3>
-<p>Adjacent-rank comparisons expose small score gaps, uncertainty-band overlap, cap-bound cases, claim-level splits, and maturity-mixed pairs.</p>
+<h3>Compare</h3>
+<p>Use adjacent-rank comparisons when score gaps are small, uncertainty bands overlap, or claim fate differs.</p>
 <a href="compare.html">Compare ranks</a>
 </article>
 <article class="reading-card">
-<h3>About And Scope</h3>
-<p>The project studies whether source-audited evaluation can help AI systems develop scientific taste and learn to ask better research questions.</p>
-<a href="about.html">Read scope</a>
-</article>
-<article class="reading-card">
-<h3>Challenge Scores</h3>
-<p>Corrections should name the affected paper, claim, public evidence, and expected effect on score, cap, claim fate, uncertainty, or audit tags.</p>
+<h3>Corrections</h3>
+<p>Challenge a score by naming the paper, claim, public evidence, and expected effect on the scoring surface.</p>
 <a href="corrections.html">Submit evidence</a>
 </article>
+<article class="reading-card">
+<h3>Methodology</h3>
+<p>Read how source audits, claim fates, retrospective validation, caps, and uncertainty guardrails shape the public ranking.</p>
+<a href="methodology.html">Read method</a>
+</article>
 </div></section>
+<section class="table-preamble" aria-label="Before reading the ranking table">
+  <strong>Before reading the table:</strong>
+  <span>read score bands with ranks, treat audit tags as part of the result, and remember that this is not a citation or authority ranking. Use withheld-signal rows as audit-boundary markers.</span>
+</section>
 
 <section class="filters" aria-label="Ranking filters">
   <label class="search">
