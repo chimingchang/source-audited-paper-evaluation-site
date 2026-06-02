@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methodology - Source-Audited Paper Evaluation</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Source-Audited Paper Evaluation</a>
+    <nav><a href="index.html">Results</a><a href="compare.html">Compare</a><a href="audits.html">Audits</a><a class="active" href="methodology.html">Methodology</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+<p class="eyebrow">Methodology</p><h1>Source-Audited, Claim-Level Evaluation</h1>
+<p class="lead">A public-facing map of how evidence becomes scores, how later validation is gated, and where audit guardrails constrain the ranking.</p>
+<nav class="page-nav" aria-label="On this page">
+<span>On this page</span>
+<div>
+<a href="#evaluation-pipeline">Evidence pipeline</a>
+<a href="#score-construction">Score construction</a>
+<a href="#invalidation-caps">Invalidation caps</a>
+<a href="#claim-level-scoring">Claim-level scoring</a>
+<a href="#rank-uncertainty">Rank uncertainty</a>
+<a href="#withheld-calibration-boundary">Withheld signals</a>
+</div></nav>
+<section class="metrics">
+<div class="metric"><span>Ranked papers</span><strong>44</strong></div>
+<div class="metric"><span>Claim-level reports</span><strong>17</strong></div>
+<div class="metric"><span>Calibration cases</span><strong>44</strong></div>
+<div class="metric"><span>Cross-case constraints</span><strong>18</strong></div>
+<div class="metric"><span>Source warnings</span><strong>0</strong></div>
+<div class="metric"><span>Release checks</span><strong>71</strong></div>
+</section>
+<section class="method-grid">
+<article class="method-card"><h2>Source audit first</h2><p>Every ranked score is downstream of source-audit evidence, predecessor controls, miss-risk labels, and public readiness gates.</p></article>
+<article class="method-card"><h2>Claim-level fate tracking</h2><p>Multi-claim papers can preserve credit for validated claims while isolating active, diagnostic, or invalidated claims.</p></article>
+<article class="method-card"><h2>Retrospective validation</h2><p>Later evidence can validate, leave unresolved, or cap claims without replacing ex ante originality.</p></article>
+<article class="method-card"><h2>Calibration guardrails</h2><p>Withheld calibration signals are not shown in this public profile and do not directly determine ranking scores.</p></article>
+</section>
+<section class="section" id="evaluation-pipeline"><div class="section-head"><p class="eyebrow">Evaluation stages</p><h2>Evidence Pipeline</h2></div>
+<div class="pipeline-grid">
+<article class="pipeline-step"><span>1</span><h3>Source audit</h3><p>Identify closest predecessors, follow-up evidence, negative evidence, source-set completeness, and miss risk.</p><a href="audits/source-audits.html">Open related view</a></article>
+<article class="pipeline-step"><span>2</span><h3>Evidence pack</h3><p>Record public evidence claims and calibration-critical source relationships in a paper-level pack.</p><a href="index.html#ranking">Open related view</a></article>
+<article class="pipeline-step"><span>3</span><h3>Scoring input</h3><p>Encode score-bearing fields only after draft gates and source-audit requirements are resolved.</p><a href="#score-construction">Open related view</a></article>
+<article class="pipeline-step"><span>4</span><h3>Scoring report</h3><p>Run the deterministic scorer and expose ex ante, retrospective, claim-level, cap, and review fields.</p><a href="#score-construction">Open related view</a></article>
+<article class="pipeline-step"><span>5</span><h3>Ranking assembly</h3><p>Rank only ready rows with high source completeness, low miss risk, and no unresolved public checks.</p><a href="index.html#ranking">Open related view</a></article>
+<article class="pipeline-step"><span>6</span><h3>Release audit</h3><p>Freeze only after evidence sufficiency, calibration, freshness, robustness, uncertainty, and publication-readiness checks pass.</p><a href="audits.html">Open related view</a></article>
+</div></section>
+<section class="section" id="score-construction"><div class="section-head"><p class="eyebrow">Score construction</p><h2>How The Public Score Is Read</h2></div>
+<div class="formula-grid">
+<article class="formula-box"><h3>Ex ante intrinsic score</h3><p>Publication-time scientific contribution, judged against the closest predecessors. It excludes author prestige, citation count, journal status, and later fame.</p></article>
+<article class="formula-box"><h3>Retrospective validity score</h3><p>Later evidence: validation, uptake, counterexamples, no-go results, mature criticism, unresolved follow-up, or mature invalidation.</p></article>
+<article class="formula-box"><h3>Maturity gate</h3><p>Controls how strongly retrospective evidence may affect the final score: immature 0.3, active unresolved 0.5, mature validated 0.7, mature invalidated 0.8.</p></article>
+<article class="formula-box"><h3>Validated final score</h3><p>The public ranking score. It uses the credit-preserving base, then applies an invalidation cap when a mature-invalidated core claim requires one.</p></article>
+</div>
+<div class="formula-box formula-wide"><h3>Credit-preserving base</h3><pre><code>credit_preserving_base_score =
+  w * raw_originality_score
++ (1 - w) * ((1 - r) * ex_ante_non_originality_score
++ r * retrospective_validity_score)</code></pre><p><code>w = 0.35</code>. <code>r</code> is the effective retrospective weight after maturity gating. This preserves historical originality without letting failed core claims rank as validated science.</p></div>
+<div class="table-wrap compact-table method-table"><table><thead><tr><th>Maturity</th><th>Maximum retrospective weight</th></tr></thead><tbody>
+<tr><td><span class="badge immature">immature</span></td><td><code>0.3</code></td></tr>
+<tr><td><span class="badge active_unresolved">active unresolved</span></td><td><code>0.5</code></td></tr>
+<tr><td><span class="badge mature_validated">mature validated</span></td><td><code>0.7</code></td></tr>
+<tr><td><span class="badge mature_invalidated">mature invalidated</span></td><td><code>0.8</code></td></tr>
+</tbody></table></div></section>
+<section class="section" id="invalidation-caps"><div class="section-head"><p class="eyebrow">Caps</p><h2>Invalidation Caps</h2></div>
+<p class="summary-copy">Caps preserve historical credit in the report while preventing mature-invalidated central claims from being treated as validated science in the public ranking.</p>
+<div class="table-wrap method-table"><table><thead><tr><th>Category</th><th>Default cap</th><th>Use case</th></tr></thead><tbody>
+<tr><td><code>core_claim_invalidated</code></td><td><strong>55</strong></td><td>The central target claim or framework failed.</td></tr>
+<tr><td><code>fruitful_but_wrong_program</code></td><td><strong>68</strong></td><td>The program was productive but the main direction did not survive.</td></tr>
+<tr><td><code>restricted_core_survives_broad_claim_fails</code></td><td><strong>72</strong></td><td>A technical core survives while the broad claim fails.</td></tr>
+</tbody></table></div></section>
+<section class="section two-col">
+  <article id="claim-level-scoring">
+    <div class="section-head"><p class="eyebrow">Claim-level scoring</p><h2>One Paper, Multiple Fates</h2></div>
+    <p class="summary-copy">Claim-level scoring is used when a paper has separable score-bearing claims with different later outcomes. Structural claim weights are ex ante: centrality, load-bearing role, technical mass, and field-facing takeaway. Retrospective evidence changes claim scores, not the original weights.</p>
+    <div class="audit-actions">
+      <a href="audits/claim-fate-registry.html">Claim fate registry</a>
+      <a href="audits/claim-fate-clusters.html">Claim fate clusters</a>
+    </div>
+  </article>
+  <article id="rank-uncertainty">
+    <div class="section-head"><p class="eyebrow">Robustness</p><h2>Rank Order Is Not Always Precise</h2></div>
+    <p class="summary-copy">Adjacent papers with overlapping uncertainty bands should be read as local score clusters unless a cross-case guardrail gives a stronger ordering. The compare page exposes small gaps, band overlap, maturity-mixed pairs, cap-bound rows, and claim-level sensitivity.</p>
+    <div class="audit-actions">
+      <a href="compare.html">Compare adjacent ranks</a>
+      <a href="audits/score-uncertainty.html">Score uncertainty</a>
+      <a href="audits/ranking-robustness.html">Ranking robustness</a>
+    </div>
+  </article>
+</section>
+<section class="section" id="withheld-calibration-boundary">
+  <div class="section-head"><p class="eyebrow">Withheld calibration boundary</p><h2>Withheld Signals Are Not Public Consensus</h2></div>
+  <p class="summary-copy">Paper-specific calibration provenance is not shown in this public profile. Withheld signals can trigger internal audits, but public ranking scores are read from source-audited score fields and do not directly depend on withheld calibration details.</p>
+</section>
+
+
+<section class="section link-panel" aria-label="Related links">
+<h2>Methodology paths</h2>
+<div class="link-groups">
+<div class="link-group">
+<h3>Related pages</h3>
+<div class="link-list">
+<a class="secondary-link" href="index.html#ranking">Results table</a>
+<a href="compare.html">Rank neighbor comparison</a>
+<a href="audits/source-audits.html">Source audits</a>
+</div></div>
+<div class="link-group">
+<h3>Audit guardrails</h3>
+<div class="link-list">
+<a href="audits/score-uncertainty.html">Score uncertainty</a>
+<a href="audits/ranking-robustness.html">Ranking robustness</a>
+<a href="audits/claim-fate-registry.html">Claim fate registry</a>
+<a href="audits/claim-fate-clusters.html">Claim fate clusters</a>
+</div></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Generated 2026-05-31. Source artifacts are versioned in the repository.
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Score Uncertainty Bands - Source-Audited Paper Evaluation</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">Source-Audited Paper Evaluation</a>
+    <nav><a href="../index.html">Results</a><a href="../compare.html">Compare</a><a class="active" href="../audits.html">Audits</a><a href="../methodology.html">Methodology</a></nav>
+  </div>
+</header>
+
+<main class="wrap audit-detail">
+<p class="eyebrow"><a href="../audits.html">Audits</a> / Score Uncertainty Bands</p>
+<h1>Score Uncertainty Bands</h1>
+<section class="metrics">
+<div class="metric"><span>Ranked papers</span><strong>44</strong></div>
+<div class="metric"><span>Median half-width</span><strong>1.1</strong></div>
+<div class="metric"><span>Max half-width</span><strong>2.5</strong></div>
+<div class="metric"><span>Stable anchors</span><strong>3</strong></div>
+<div class="metric"><span>Cluster-order sensitive</span><strong>19</strong></div>
+<div class="metric"><span>Immature or active-unresolved</span><strong>19</strong></div>
+</section>
+
+<p class="notice canonical-notice">Generated view. The raw YAML/Markdown artifact is the canonical source.</p>
+<section class="section markdown-section">
+<p>Created: 2026-05-30</p>
+<p>Status: diagnostic pass; no official ranking score changed.</p>
+<p>Ranking: <code>2026-05-30-v0.4.18-public-ranking</code></p>
+<p>Source file: <code>evaluations/rankings/2026-05-30-v0.4.18-public-ranking.yaml</code></p>
+<p>This artifact adds interpretation bands around the frozen v0.4.18 point estimates. Bands are not alternate scores and are not written into the official ranking YAML. They are a public-reading guardrail against overinterpreting small score gaps.</p>
+</section>
+<section class="section markdown-section"><h2>Band Rule</h2>
+<p>Each score band is <code>score +/- half_width</code>, where <code>half_width</code> is the maximum of these transparent components:</p>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Component</th><th>Rule</th></tr></thead>
+<tbody>
+<tr><td>Local robustness</td><td>Largest point-score movement under retrospective-weight shift <code>+/-0.10</code> and claim-weight transfer <code>10%</code>.</td></tr>
+<tr><td>Maturity floor</td><td><code>0.4</code> mature validated, <code>1.2</code> active unresolved, <code>1.8</code> immature, <code>1.4</code> mature invalidated.</td></tr>
+<tr><td>Claim-level floor</td><td><code>0.6</code> for claim-level adjusted reports.</td></tr>
+<tr><td>Cap floor</td><td><code>1.5</code> when an invalidation cap is locally binding.</td></tr>
+<tr><td>withheld calibration floor</td><td><code>1.2</code> explicit private direction-risk, <code>0.8</code> score-bearing user counterfactual, <code>0.5</code> public-source-backed user confirmation.</td></tr>
+<tr><td>Source floor</td><td><code>0.3</code> for high-completeness/low-miss-risk rows, otherwise <code>1.0</code>.</td></tr>
+</tbody></table></div>
+<p>Adjacent row order is not treated as a precise public claim when the score gap is less than or equal to the sum of the two adjacent half-widths.</p>
+</section>
+<section class="section markdown-section"><h2>Summary</h2>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Ranked papers</td><td>44</td></tr>
+<tr><td>Median half-width</td><td>1.1</td></tr>
+<tr><td>Max half-width</td><td>2.5</td></tr>
+<tr><td>Stable anchors</td><td>3</td></tr>
+<tr><td>Cluster-order sensitive</td><td>19</td></tr>
+<tr><td>Immature or active-unresolved</td><td>19</td></tr>
+<tr><td>Cap-sensitive</td><td>3</td></tr>
+<tr><td>Adjacent pairs unresolved by combined uncertainty</td><td>36</td></tr>
+</tbody></table></div>
+</section>
+<section class="section markdown-section"><h2>Score Bands</h2>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Rank</th><th>Paper</th><th>Score</th><th>Band</th><th>Half-width</th><th>Rank interval</th><th>Level</th><th>Drivers</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><a href="../papers/hep-th_9711200.html"><code>hep-th/9711200</code></a></td><td>99.0</td><td>98.2-99.8</td><td>0.8</td><td>1-1</td><td><code>stable_anchor</code></td><td><code>private_calibration_floor</code></td></tr>
+<tr><td>2</td><td><a href="../papers/hep-th_9601029.html"><code>hep-th/9601029</code></a></td><td>97.7</td><td>97.3-98.1</td><td>0.4</td><td>2-2</td><td><code>stable_anchor</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>3</td><td><a href="../papers/hep-th_0603001.html"><code>hep-th/0603001</code></a></td><td>96.3</td><td>95.9-96.7</td><td>0.4</td><td>3-7</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>4</td><td><a href="../papers/hep-th_9510017.html"><code>hep-th/9510017</code></a></td><td>96.3</td><td>95.9-96.7</td><td>0.4</td><td>3-7</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>5</td><td><a href="../papers/1412.5148.html"><code>1412.5148</code></a></td><td>95.8</td><td>95.0-96.6</td><td>0.8</td><td>3-7</td><td><code>cluster_order_sensitive</code></td><td><code>private_calibration_floor</code></td></tr>
+<tr><td>6</td><td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td><td>95.5</td><td>94.3-96.7</td><td>1.2</td><td>3-7</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>7</td><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td><td>95.1</td><td>93.9-96.3</td><td>1.2</td><td>3-8</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>8</td><td><a href="../papers/hep-th_0105097.html"><code>hep-th/0105097</code></a></td><td>93.5</td><td>93.1-93.9</td><td>0.4</td><td>7-8</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>9</td><td><a href="../papers/hep-th_9802109.html"><code>hep-th/9802109</code></a></td><td>92.6</td><td>92.2-93.0</td><td>0.4</td><td>9-10</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>10</td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td>91.6</td><td>90.4-92.8</td><td>1.2</td><td>9-13</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>11</td><td><a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a></td><td>90.9</td><td>90.5-91.3</td><td>0.4</td><td>10-13</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>12</td><td><a href="../papers/hep-th_0210114.html"><code>hep-th/0210114</code></a></td><td>90.6</td><td>90.2-91.0</td><td>0.4</td><td>10-13</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>13</td><td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td>89.6</td><td>88.4-90.8</td><td>1.2</td><td>10-18</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>14</td><td><a href="../papers/1802.04445.html"><code>1802.04445</code></a></td><td>89.2</td><td>88.8-89.6</td><td>0.4</td><td>13-17</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>15</td><td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td><td>88.9</td><td>87.7-90.1</td><td>1.2</td><td>13-20</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>16</td><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td>88.2</td><td>86.8-89.6</td><td>1.4</td><td>13-24</td><td><code>immature_or_active_unresolved</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>17</td><td><a href="../papers/1802.04790.html"><code>1802.04790</code></a></td><td>88.0</td><td>87.6-88.4</td><td>0.4</td><td>14-20</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>18</td><td><a href="../papers/1004.0956.html"><code>1004.0956</code></a></td><td>87.8</td><td>85.5-90.1</td><td>2.3</td><td>13-26</td><td><code>immature_or_active_unresolved</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>19</td><td><a href="../papers/hep-th_0412308.html"><code>hep-th/0412308</code></a></td><td>87.7</td><td>87.3-88.1</td><td>0.4</td><td>15-22</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>20</td><td><a href="../papers/hep-th_9910096.html"><code>hep-th/9910096</code></a></td><td>87.6</td><td>87.2-88.0</td><td>0.4</td><td>15-23</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>21</td><td><a href="../papers/0912.3462.html"><code>0912.3462</code></a></td><td>87.0</td><td>86.6-87.4</td><td>0.4</td><td>17-24</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>22</td><td><a href="../papers/hep-th_0403047.html"><code>hep-th/0403047</code></a></td><td>86.8</td><td>86.4-87.2</td><td>0.4</td><td>18-25</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>23</td><td><a href="../papers/1804.00949.html"><code>1804.00949</code></a></td><td>86.6</td><td>86.2-87.0</td><td>0.4</td><td>19-26</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>24</td><td><a href="../papers/2209.06728.html"><code>2209.06728</code></a></td><td>86.2</td><td>85.0-87.4</td><td>1.2</td><td>17-27</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>25</td><td><a href="../papers/hep-th_0501052.html"><code>hep-th/0501052</code></a></td><td>86.0</td><td>85.6-86.4</td><td>0.4</td><td>21-26</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>26</td><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td>85.1</td><td>83.9-86.3</td><td>1.2</td><td>22-29</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>27</td><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td>83.8</td><td>82.6-85.0</td><td>1.2</td><td>25-32</td><td><code>immature_or_active_unresolved</code></td><td><code>local_robustness</code>, <code>maturity_floor</code></td></tr>
+<tr><td>28</td><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td>83.0</td><td>81.2-84.8</td><td>1.8</td><td>26-32</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>29</td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td>82.5</td><td>81.1-83.9</td><td>1.4</td><td>26-33</td><td><code>immature_or_active_unresolved</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>30</td><td><a href="../papers/2011.01953.html"><code>2011.01953</code></a></td><td>82.2</td><td>81.0-83.4</td><td>1.2</td><td>27-33</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>31</td><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td>81.9</td><td>80.7-83.1</td><td>1.2</td><td>27-33</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>32</td><td><a href="../papers/2208.02757.html"><code>2208.02757</code></a></td><td>81.7</td><td>80.5-82.9</td><td>1.2</td><td>27-33</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>33</td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td>79.6</td><td>78.1-81.1</td><td>1.5</td><td>29-34</td><td><code>immature_or_active_unresolved</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>34</td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td>78.6</td><td>76.9-80.3</td><td>1.7</td><td>33-35</td><td><code>immature_or_active_unresolved</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>35</td><td><a href="../papers/1907.03363.html"><code>1907.03363</code></a></td><td>76.5</td><td>76.0-77.0</td><td>0.5</td><td>34-35</td><td><code>cluster_order_sensitive</code></td><td><code>local_robustness</code>, <code>private_calibration_floor</code></td></tr>
+<tr><td>36</td><td><a href="../papers/1405.0412.html"><code>1405.0412</code></a></td><td>75.4</td><td>75.0-75.8</td><td>0.4</td><td>36-36</td><td><code>stable_anchor</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>37</td><td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td><td>73.3</td><td>72.3-74.3</td><td>1.0</td><td>37-40</td><td><code>cluster_order_sensitive</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>38</td><td><a href="../papers/1706.03917.html"><code>1706.03917</code></a></td><td>72.4</td><td>72.0-72.8</td><td>0.4</td><td>37-40</td><td><code>cluster_order_sensitive</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>39</td><td><a href="../papers/0906.0591.html"><code>0906.0591</code></a></td><td>71.9</td><td>71.3-72.5</td><td>0.6</td><td>37-40</td><td><code>cluster_order_sensitive</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>40</td><td><a href="../papers/2006.06872.html"><code>2006.06872</code></a></td><td>71.1</td><td>69.9-72.3</td><td>1.2</td><td>37-40</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>41</td><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td>67.3</td><td>65.0-69.6</td><td>2.3</td><td>41-42</td><td><code>cap_sensitive</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>42</td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td>65.1</td><td>62.6-67.6</td><td>2.5</td><td>41-42</td><td><code>cap_sensitive</code></td><td><code>local_robustness</code></td></tr>
+<tr><td>43</td><td><a href="../papers/2312.07820.html"><code>2312.07820</code></a></td><td>57.7</td><td>55.9-59.5</td><td>1.8</td><td>43-44</td><td><code>immature_or_active_unresolved</code></td><td><code>maturity_floor</code></td></tr>
+<tr><td>44</td><td><a href="../papers/0706.3359.html"><code>0706.3359</code></a></td><td>55.0</td><td>53.5-56.5</td><td>1.5</td><td>43-44</td><td><code>cap_sensitive</code></td><td><code>cap_floor</code></td></tr>
+</tbody></table></div>
+</section>
+<section class="section markdown-section"><h2>Adjacent Ordering Warnings</h2>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Higher row</th><th>Lower row</th><th>Gap</th><th>Combined half-width</th><th>Public interpretation</th></tr></thead>
+<tbody>
+<tr><td><a href="../papers/hep-th_0603001.html"><code>hep-th/0603001</code></a></td><td><a href="../papers/hep-th_9510017.html"><code>hep-th/9510017</code></a></td><td>0.0</td><td>0.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_9510017.html"><code>hep-th/9510017</code></a></td><td><a href="../papers/1412.5148.html"><code>1412.5148</code></a></td><td>0.5</td><td>1.2</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1412.5148.html"><code>1412.5148</code></a></td><td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td><td>0.3</td><td>2.0</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td><td>0.4</td><td>2.4</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td><td><a href="../papers/hep-th_0105097.html"><code>hep-th/0105097</code></a></td><td>1.6</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_9802109.html"><code>hep-th/9802109</code></a></td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td>1.0</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td><a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a></td><td>0.7</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a></td><td><a href="../papers/hep-th_0210114.html"><code>hep-th/0210114</code></a></td><td>0.3</td><td>0.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0210114.html"><code>hep-th/0210114</code></a></td><td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td>1.0</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td><a href="../papers/1802.04445.html"><code>1802.04445</code></a></td><td>0.4</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1802.04445.html"><code>1802.04445</code></a></td><td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td><td>0.3</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td>0.7</td><td>2.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td><a href="../papers/1802.04790.html"><code>1802.04790</code></a></td><td>0.2</td><td>1.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1802.04790.html"><code>1802.04790</code></a></td><td><a href="../papers/1004.0956.html"><code>1004.0956</code></a></td><td>0.2</td><td>2.7</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1004.0956.html"><code>1004.0956</code></a></td><td><a href="../papers/hep-th_0412308.html"><code>hep-th/0412308</code></a></td><td>0.1</td><td>2.7</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0412308.html"><code>hep-th/0412308</code></a></td><td><a href="../papers/hep-th_9910096.html"><code>hep-th/9910096</code></a></td><td>0.1</td><td>0.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_9910096.html"><code>hep-th/9910096</code></a></td><td><a href="../papers/0912.3462.html"><code>0912.3462</code></a></td><td>0.6</td><td>0.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/0912.3462.html"><code>0912.3462</code></a></td><td><a href="../papers/hep-th_0403047.html"><code>hep-th/0403047</code></a></td><td>0.2</td><td>0.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0403047.html"><code>hep-th/0403047</code></a></td><td><a href="../papers/1804.00949.html"><code>1804.00949</code></a></td><td>0.2</td><td>0.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1804.00949.html"><code>1804.00949</code></a></td><td><a href="../papers/2209.06728.html"><code>2209.06728</code></a></td><td>0.4</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/2209.06728.html"><code>2209.06728</code></a></td><td><a href="../papers/hep-th_0501052.html"><code>hep-th/0501052</code></a></td><td>0.2</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0501052.html"><code>hep-th/0501052</code></a></td><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td>0.9</td><td>1.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td>1.3</td><td>2.4</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td>0.8</td><td>3.0</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td>0.5</td><td>3.2</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td><a href="../papers/2011.01953.html"><code>2011.01953</code></a></td><td>0.3</td><td>2.6</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/2011.01953.html"><code>2011.01953</code></a></td><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td>0.3</td><td>2.4</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td><a href="../papers/2208.02757.html"><code>2208.02757</code></a></td><td>0.2</td><td>2.4</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/2208.02757.html"><code>2208.02757</code></a></td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td>2.1</td><td>2.7</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td>1.0</td><td>3.2</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td><a href="../papers/1907.03363.html"><code>1907.03363</code></a></td><td>2.1</td><td>2.2</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td><td><a href="../papers/1706.03917.html"><code>1706.03917</code></a></td><td>0.9</td><td>1.4</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/1706.03917.html"><code>1706.03917</code></a></td><td><a href="../papers/0906.0591.html"><code>0906.0591</code></a></td><td>0.5</td><td>1.0</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/0906.0591.html"><code>0906.0591</code></a></td><td><a href="../papers/2006.06872.html"><code>2006.06872</code></a></td><td>0.8</td><td>1.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td>2.2</td><td>4.8</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+<tr><td><a href="../papers/2312.07820.html"><code>2312.07820</code></a></td><td><a href="../papers/0706.3359.html"><code>0706.3359</code></a></td><td>2.7</td><td>3.3</td><td>Treat as same local score cluster unless a guardrail states otherwise.</td></tr>
+</tbody></table></div>
+</section>
+<section class="section markdown-section"><h2>Decision</h2>
+<p>Keep v0.4.18 official scores unchanged. Use these bands when presenting the ranking publicly: exact row numbers are reliable for broad score separations, but near ties and overlapping bands should be described as local clusters rather than precise one-dimensional orderings.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Generated 2026-05-31. Source artifacts are versioned in the repository.
+  </div>
+</footer>
+
+</body>
+</html>

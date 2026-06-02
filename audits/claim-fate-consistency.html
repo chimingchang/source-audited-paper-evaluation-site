@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claim Fate Consistency - Source-Audited Paper Evaluation</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">Source-Audited Paper Evaluation</a>
+    <nav><a href="../index.html">Results</a><a href="../compare.html">Compare</a><a class="active" href="../audits.html">Audits</a><a href="../methodology.html">Methodology</a></nav>
+  </div>
+</header>
+
+<main class="wrap audit-detail">
+<p class="eyebrow"><a href="../audits.html">Audits</a> / Claim Fate Consistency</p>
+<h1>Claim Fate Consistency</h1>
+<section class="metrics">
+<div class="metric"><span>Registry claims</span><strong>72</strong></div>
+<div class="metric"><span>Active clusters</span><strong>17</strong></div>
+<div class="metric"><span>Clustered claims</span><strong>61</strong></div>
+<div class="metric"><span>Coverage</span><strong>84.7%</strong></div>
+<div class="metric"><span>Unclustered claims</span><strong>11</strong></div>
+<div class="metric"><span>Accepted exceptions</span><strong>0</strong></div>
+</section>
+
+<p class="notice canonical-notice">Generated view. The raw YAML/Markdown artifact is the canonical source.</p>
+<section class="section markdown-section">
+<p>Created: 2026-05-30</p>
+<p>Status: pass.</p>
+<p>Registry: <code>evaluations/rankings/2026-05-30-v0.4.18-claim-fate-registry.yaml</code></p>
+<p>Cluster benchmark: <code>benchmarks/claim_fate_clusters.yaml</code></p>
+<p>This audit checks whether explicitly clustered claim-level fates are handled consistently across papers. It does not change scores; it turns cross-paper consistency expectations into executable guardrails.</p>
+</section>
+<section class="section markdown-section"><h2>Summary</h2>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Registry claims</td><td>72</td></tr>
+<tr><td>Active clusters</td><td>17</td></tr>
+<tr><td>Clustered claims</td><td>61</td></tr>
+<tr><td>Coverage</td><td>84.7%</td></tr>
+<tr><td>Unclustered claims</td><td>11</td></tr>
+<tr><td>Accepted exceptions</td><td>0</td></tr>
+<tr><td>Failures</td><td>0</td></tr>
+</tbody></table></div>
+</section>
+<section class="section markdown-section"><h2>Cluster Results</h2>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Cluster</th><th>Claims</th><th>Rule</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td><code>island_page_curve_core_validated</code> Island/Page-curve core derivations and controlled entropy calculations</td><td>6</td><td>role=score_bearing; maturity=mature_validated; cap=false; retro=94..inf</td><td>pass</td></tr>
+<tr><td><code>hayden_preskill_decoding_validated</code> Hayden-Preskill entanglement-wedge decoding descendants</td><td>2</td><td>role=score_bearing; maturity=mature_validated; cap=false; retro=94..inf</td><td>pass</td></tr>
+<tr><td><code>fixed_theory_information_resolution_unresolved_diagnostic</code> Complete fixed-theory black-hole information-resolution claims</td><td>4</td><td>role=diagnostic_only; maturity=active_unresolved; cap=false; retro=-inf..80</td><td>pass</td></tr>
+<tr><td><code>replica_wormhole_scope_control_diagnostics</code> Replica-wormhole scope-control and interpretive diagnostic claims</td><td>3</td><td>role=diagnostic_only; maturity=active_unresolved/mature_validated; cap=false</td><td>pass</td></tr>
+<tr><td><code>matrix_model_validated_core</code> BFSS matrix-model validated technical core</td><td>2</td><td>role=score_bearing; maturity=mature_validated; cap=false; retro=90..inf</td><td>pass</td></tr>
+<tr><td><code>matrix_model_broad_m_theory_active_unresolved</code> BFSS broad M-theory equivalence and program seed claims</td><td>2</td><td>role=score_bearing; maturity=active_unresolved; cap=false; retro=82..inf</td><td>pass</td></tr>
+<tr><td><code>twistor_amplitude_validated_descendants</code> Twistor-amplitude validated descendant claims</td><td>3</td><td>role=score_bearing; maturity=mature_validated; cap=false; retro=90..inf</td><td>pass</td></tr>
+<tr><td><code>higher_spin_validated_core</code> Higher-spin/vector-model validated technical core</td><td>3</td><td>role=score_bearing; maturity=mature_validated; cap=false; retro=84..inf</td><td>pass</td></tr>
+<tr><td><code>higher_spin_string_bridge_active_unresolved</code> Higher-spin/stringy bridge and ABJ triality active claims</td><td>4</td><td>role=score_bearing; maturity=active_unresolved; cap=false; retro=70..85</td><td>pass</td></tr>
+<tr><td><code>de_sitter_control_active_unresolved</code> de Sitter control and strong no-dS conjecture active-unresolved claims</td><td>6</td><td>role=score_bearing; maturity=active_unresolved; cap=false; retro=55..72</td><td>pass</td></tr>
+<tr><td><code>de_sitter_field_opening_validated</code> Flux/LVS/swampland field-opening validated substrate</td><td>7</td><td>role=score_bearing; maturity=mature_validated; cap=false; retro=84..inf</td><td>pass</td></tr>
+<tr><td><code>er_epr_restricted_descendants_validated</code> ER=EPR restricted holographic and traversable-wormhole descendants</td><td>2</td><td>role=score_bearing; maturity=mature_validated; cap=false; retro=88..inf</td><td>pass</td></tr>
+<tr><td><code>er_epr_broad_universal_active_unresolved</code> ER=EPR broad universal/firewall-resolution claims</td><td>3</td><td>role=score_bearing; maturity=active_unresolved; cap=false; retro=55..82</td><td>pass</td></tr>
+<tr><td><code>fruitful_but_wrong_capped_broad_claims</code> Mature invalidated but fruitful broad-program claims</td><td>4</td><td>role=score_bearing; maturity=mature_invalidated; cap=true; cap_category=fruitful_but_wrong_program; retro=-inf..55</td><td>pass</td></tr>
+<tr><td><code>fortuitous_cohomology_immature_score_bearing</code> Fortuitous cohomology immature score-bearing claims</td><td>3</td><td>role=score_bearing; maturity=immature; cap=false; retro=68..80</td><td>pass</td></tr>
+<tr><td><code>syk_validated_technical_consolidation</code> SYK technical consolidation claims</td><td>4</td><td>role=score_bearing; maturity=mature_validated; cap=false; retro=82..84</td><td>pass</td></tr>
+<tr><td><code>entropic_gravity_active_uncapped_survivors</code> Entropic-gravity active unresolved uncapped survivor claims</td><td>3</td><td>role=score_bearing; maturity=active_unresolved; cap=false; retro=50..72</td><td>pass</td></tr>
+</tbody></table></div>
+</section>
+<section class="section markdown-section"><h2>Clustered Claims</h2>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Cluster</th><th>Paper</th><th>Claim</th><th>Role</th><th>Maturity</th><th>Retro</th><th>Cap</th></tr></thead>
+<tbody>
+<tr><td><code>island_page_curve_core_validated</code></td><td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td><td><code>island_page_curve_entanglement_wedge_breakthrough</code> QES island/Page-curve transition and entanglement-wedge reconstruction</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>97.0</td><td>no</td></tr>
+<tr><td><code>island_page_curve_core_validated</code></td><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td><td><code>bulk_entropy_qes_motion_in_evaporation</code> Large bulk-entropy gradients and QES motion in evaporating black holes</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>97.0</td><td>no</td></tr>
+<tr><td><code>island_page_curve_core_validated</code></td><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td><td><code>page_time_qes_phase_transition</code> Page-time-like QES phase transition in a JT/CFT bath model</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>96.0</td><td>no</td></tr>
+<tr><td><code>island_page_curve_core_validated</code></td><td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td><code>replica_wormhole_derivation_of_island_rule</code> Gravitational replica-trick and replica-wormhole derivation of the island rule</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>96.0</td><td>no</td></tr>
+<tr><td><code>island_page_curve_core_validated</code></td><td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td><code>controlled_page_curve_entropy_calculations</code> Controlled Page-curve entropy calculations in semiclassical/JT/bath models</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>95.0</td><td>no</td></tr>
+<tr><td><code>island_page_curve_core_validated</code></td><td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td><td><code>replica_wormhole_page_curve_justification</code> Replica-wormhole justification of Page-curve computations in controlled models</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>94.0</td><td>no</td></tr>
+<tr><td><code>hayden_preskill_decoding_validated</code></td><td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td><td><code>hayden_preskill_decoding_generalization</code> Hayden-Preskill decoding criterion from entanglement-wedge reconstruction</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>94.0</td><td>no</td></tr>
+<tr><td><code>hayden_preskill_decoding_validated</code></td><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td><td><code>hayden_preskill_entanglement_wedge_timescale</code> Hayden-Preskill-scale entanglement-wedge information escape</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>94.0</td><td>no</td></tr>
+<tr><td><code>fixed_theory_information_resolution_unresolved_diagnostic</code></td><td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td><td><code>complete_fixed_theory_information_paradox_resolution</code> Complete fixed-theory black-hole information-paradox resolution</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td><td>78.0</td><td>no</td></tr>
+<tr><td><code>fixed_theory_information_resolution_unresolved_diagnostic</code></td><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td><td><code>complete_fixed_theory_information_paradox_resolution</code> Complete fixed-theory black-hole information-paradox resolution</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td><td>78.0</td><td>no</td></tr>
+<tr><td><code>fixed_theory_information_resolution_unresolved_diagnostic</code></td><td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td><code>full_fixed_theory_information_paradox_resolution</code> Complete fixed-theory black-hole information-paradox resolution beyond controlled island models</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td><td>76.0</td><td>no</td></tr>
+<tr><td><code>fixed_theory_information_resolution_unresolved_diagnostic</code></td><td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td><td><code>complete_fixed_theory_information_paradox_resolution</code> Complete fixed-theory black-hole information-paradox resolution</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td><td>74.0</td><td>no</td></tr>
+<tr><td><code>replica_wormhole_scope_control_diagnostics</code></td><td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td><code>indirect_er_epr_entanglement_geometry_support</code> Indirect ER=EPR-family and entanglement-geometry support from islands and replica wormholes</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td><td>86.0</td><td>no</td></tr>
+<tr><td><code>replica_wormhole_scope_control_diagnostics</code></td><td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td><td><code>jt_syk_and_west_coast_model_applications</code> West-coast/simple-model, JT, and SYK replica-geometry applications</td><td><code>diagnostic_only</code></td><td><code>mature_validated</code></td><td>86.0</td><td>no</td></tr>
+<tr><td><code>replica_wormhole_scope_control_diagnostics</code></td><td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td><td><code>ensemble_average_and_factorization_interpretation</code> Ensemble-average interpretation and factorization implications of replica wormholes</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td><td>76.0</td><td>no</td></tr>
+<tr><td><code>matrix_model_validated_core</code></td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td><code>d0_matrix_dlcq_framework</code> D0-brane matrix quantum mechanics as the light-cone/DLCQ M-theory framework</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>94.0</td><td>no</td></tr>
+<tr><td><code>matrix_model_validated_core</code></td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td><code>supergravity_membrane_evidence_package</code> Supergraviton scattering, membrane states, and noncommutative membrane evidence inside one model</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>90.0</td><td>no</td></tr>
+<tr><td><code>matrix_model_broad_m_theory_active_unresolved</code></td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td><code>full_uncompactified_m_theory_equivalence</code> Precise equivalence with full uncompactified eleven-dimensional M-theory</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>82.0</td><td>no</td></tr>
+<tr><td><code>matrix_model_broad_m_theory_active_unresolved</code></td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td><code>holographic_nonperturbative_program_seed</code> Holographic nonperturbative quantum-gravity program seeded by the matrix model</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>89.0</td><td>no</td></tr>
+<tr><td><code>twistor_amplitude_validated_descendants</code></td><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td><code>twistor_space_localization_of_yang_mills_amplitudes</code> Twistor-space localization of Yang-Mills amplitudes on holomorphic curves</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>90.0</td><td>no</td></tr>
+<tr><td><code>twistor_amplitude_validated_descendants</code></td><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td><code>direct_twistor_amplitude_descendants</code> Direct CSW, RSV, and twistor-string tree-amplitude descendants</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>91.0</td><td>no</td></tr>
+<tr><td><code>twistor_amplitude_validated_descendants</code></td><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td><code>modern_on_shell_amplitude_geometry_lineage</code> Field-opening lineage into BCFW, dual superconformal/Yangian, Grassmannian, amplituhedron, and ambitwistor strings</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>94.0</td><td>no</td></tr>
+<tr><td><code>higher_spin_validated_core</code></td><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td><code>free_large_n_scft_higher_spin_duality</code> Free large-N SCFT / massless higher-spin holography frame</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>89.0</td><td>no</td></tr>
+<tr><td><code>higher_spin_validated_core</code></td><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td><code>ads4_cubic_scalar_coupling_test</code> AdS4 cubic scalar coupling test and immediate validation branch</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>86.0</td><td>no</td></tr>
+<tr><td><code>higher_spin_validated_core</code></td><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td><code>maximal_susy_higher_spin_spectrum_dictionary</code> Maximal-supersymmetric higher-spin spectrum/dictionary structures</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>84.0</td><td>no</td></tr>
+<tr><td><code>higher_spin_string_bridge_active_unresolved</code></td><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td><code>tensionless_string_m_theory_bridge_active_unresolved</code> Tensionless string/M-theory and critical-tension bridge</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>80.0</td><td>no</td></tr>
+<tr><td><code>higher_spin_string_bridge_active_unresolved</code></td><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td><code>supersymmetric_vasiliev_boundary_dictionary</code> Supersymmetric Vasiliev boundary conditions and theta0/CS-level dictionary</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>84.0</td><td>no</td></tr>
+<tr><td><code>higher_spin_string_bridge_active_unresolved</code></td><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td><code>large_n_finite_m_abj_vasiliev_triality</code> Large-N finite-M ABJ duality to N=6 Vasiliev theory with U(M) Chan-Paton factors</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>79.0</td><td>no</td></tr>
+<tr><td><code>higher_spin_string_bridge_active_unresolved</code></td><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td><code>strong_coupling_stringy_interpolation</code> Strong-coupling interpolation from non-Abelian Vasiliev theory to type IIA string field theory</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>70.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_control_active_unresolved</code></td><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td><code>de_sitter_uplift_and_full_control_claim</code> Tachyon-free de Sitter uplift and fully controlled compact LVS de Sitter claim</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>60.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_control_active_unresolved</code></td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td><code>anti_d3_uplift_to_metastable_de_sitter</code> Warped anti-D3 uplift from supersymmetric AdS to metastable de Sitter</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>68.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_control_active_unresolved</code></td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td><code>fully_controlled_compact_de_sitter_vacua_claim</code> Fully controlled metastable compact de Sitter vacua in string theory</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>63.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_control_active_unresolved</code></td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td><code>anthropic_lifetime_and_late_time_cosmology_claims</code> Anthropic tuning, lifetime, recurrence, and late-time cosmology implications</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>72.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_control_active_unresolved</code></td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td><code>original_strong_gradient_bound</code> Original global gradient bound |grad V| &gt;= c V for positive scalar potentials</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>58.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_control_active_unresolved</code></td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td><code>universal_no_ds_and_cosmological_predictions</code> Universal no-dS, quintessence, and inflationary implications of the strong conjecture</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>55.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_field_opening_validated</code></td><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td><code>large_volume_ads_kahler_moduli_stabilization</code> Exponentially large-volume non-supersymmetric AdS/Kahler-moduli stabilization</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>89.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_field_opening_validated</code></td><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td><code>alpha_prime_nonperturbative_lvs_mechanism</code> Alpha-prime plus nonperturbative balance as a systematic LVS mechanism</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>86.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_field_opening_validated</code></td><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td><code>lvs_phenomenology_and_axion_substrate</code> Large-volume phenomenology, soft terms, and axion substrate</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>85.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_field_opening_validated</code></td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td><code>flux_and_nonperturbative_moduli_stabilization_package</code> Flux plus nonperturbative Kahler-modulus stabilization package yielding supersymmetric AdS vacua</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>88.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_field_opening_validated</code></td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td><code>string_landscape_field_opening_program</code> Field-opening string landscape and de Sitter-control program</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>90.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_field_opening_validated</code></td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td><code>field_opening_diagnostic_agenda</code> Field-opening diagnostic agenda for auditing de Sitter control in string compactifications</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>88.0</td><td>no</td></tr>
+<tr><td><code>de_sitter_field_opening_validated</code></td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td><code>regime_limited_no_go_and_control_pressure</code> Regime-limited no-go theorems and technical pressure on classical, asymptotic, KKLT, and LVS de Sitter control</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>84.0</td><td>no</td></tr>
+<tr><td><code>er_epr_restricted_descendants_validated</code></td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td><code>restricted_holographic_er_epr_examples</code> Restricted holographic EPR-pair, TFD, worldsheet, and multiboundary wormhole support</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>88.0</td><td>no</td></tr>
+<tr><td><code>er_epr_restricted_descendants_validated</code></td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td><code>traversable_wormhole_teleportation_descendants</code> Traversable-wormhole and quantum-teleportation dictionary seeded by the ER=EPR framework</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>90.0</td><td>no</td></tr>
+<tr><td><code>er_epr_broad_universal_active_unresolved</code></td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td><code>er_epr_conjectural_synthesis</code> ER=EPR conceptual synthesis linking ER bridges, EPR entanglement, and firewall questions</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>82.0</td><td>no</td></tr>
+<tr><td><code>er_epr_broad_universal_active_unresolved</code></td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td><code>universal_all_entanglement_wormhole_claim</code> Universal claim that every ordinary entangled pair has a physical wormhole dual</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>55.0</td><td>no</td></tr>
+<tr><td><code>er_epr_broad_universal_active_unresolved</code></td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td><code>firewall_resolution_claim</code> ER=EPR by itself resolves the full firewall or information-paradox problem</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>58.0</td><td>no</td></tr>
+<tr><td><code>fruitful_but_wrong_capped_broad_claims</code></td><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td><code>broad_standard_local_2d_cft_duality</code> Broad standard local chiral 2D CFT duality for generic four-dimensional Kerr</td><td><code>score_bearing</code></td><td><code>mature_invalidated</code></td><td>50.0</td><td><code>fruitful_but_wrong_program</code> 60.0</td></tr>
+<tr><td><code>fruitful_but_wrong_capped_broad_claims</code></td><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td><code>generic_kerr_microscopic_state_counting</code> Microscopic state-counting interpretation for generic Kerr from the original Cardy match</td><td><code>score_bearing</code></td><td><code>mature_invalidated</code></td><td>52.0</td><td><code>fruitful_but_wrong_program</code> 58.0</td></tr>
+<tr><td><code>fruitful_but_wrong_capped_broad_claims</code></td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td><code>literal_gravity_and_inertia_as_entropic_force</code> Broad literal claim that gravity and inertia are entropic forces rather than fundamental interactions</td><td><code>score_bearing</code></td><td><code>mature_invalidated</code></td><td>38.0</td><td><code>fruitful_but_wrong_program</code> 55.0</td></tr>
+<tr><td><code>fruitful_but_wrong_capped_broad_claims</code></td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td><code>entropic_cosmology_and_dark_universe_descendants</code> Entropic cosmology, dark-universe, and modified-gravity descendant claims</td><td><code>score_bearing</code></td><td><code>mature_invalidated</code></td><td>45.0</td><td><code>fruitful_but_wrong_program</code> 52.0</td></tr>
+<tr><td><code>fortuitous_cohomology_immature_score_bearing</code></td><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td><code>fortuitous_cohomology_taxonomy</code> Fortuitous cohomology taxonomy and terminology</td><td><code>score_bearing</code></td><td><code>immature</code></td><td>80.0</td><td>no</td></tr>
+<tr><td><code>fortuitous_cohomology_immature_score_bearing</code></td><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td><code>holographic_covering_interpretation</code> Holographic-covering interpretation of fortuitous cohomology</td><td><code>score_bearing</code></td><td><code>immature</code></td><td>74.0</td><td>no</td></tr>
+<tr><td><code>fortuitous_cohomology_immature_score_bearing</code></td><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td><code>black_hole_microstate_interpretation</code> Black-hole microstate interpretation of the fortuity/cohomology signal</td><td><code>score_bearing</code></td><td><code>immature</code></td><td>68.0</td><td>no</td></tr>
+<tr><td><code>syk_validated_technical_consolidation</code></td><td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td><td><code>syk_large_n_two_point_bilocal_writeup</code> Citable large-N two-point and bilocal treatment of the SYK/Kitaev model</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>82.0</td><td>no</td></tr>
+<tr><td><code>syk_validated_technical_consolidation</code></td><td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td><td><code>four_point_kernel_chaos_schwarzian_writeup</code> Four-point ladder/kernel, chaos, and Schwarzian/reparametrization writeup</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>84.0</td><td>no</td></tr>
+<tr><td><code>syk_validated_technical_consolidation</code></td><td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td><td><code>near_extremal_black_hole_near_ads2_bridge</code> Near-extremal black-hole and near-AdS2 interpretive bridge</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>84.0</td><td>no</td></tr>
+<tr><td><code>syk_validated_technical_consolidation</code></td><td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td><td><code>canonical_technical_consolidation_reference</code> Canonical technical consolidation reference for the early SYK/Schwarzian program</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td><td>82.0</td><td>no</td></tr>
+<tr><td><code>entropic_gravity_active_uncapped_survivors</code></td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td><code>heuristic_newton_inertia_derivation</code> Heuristic derivation of Newtonian inertia and gravity from entropy displacement, Unruh temperature, area bits, and equipartition</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>60.0</td><td>no</td></tr>
+<tr><td><code>entropic_gravity_active_uncapped_survivors</code></td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td><code>relativistic_einstein_komar_generalization</code> Relativistic generalization using Komar mass and thermodynamic screen variables to recover Einstein equations</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>50.0</td><td>no</td></tr>
+<tr><td><code>entropic_gravity_active_uncapped_survivors</code></td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td><code>field_opening_emergent_gravity_agenda</code> Field-opening agenda for entropy-inspired, holographic, and information-theoretic emergent gravity</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td><td>72.0</td><td>no</td></tr>
+</tbody></table></div>
+</section>
+<section class="section markdown-section"><h2>Coverage Gaps</h2>
+<p>Unclustered claims are coverage gaps for future benchmark expansion, not failures in this audit.</p>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Paper</th><th>Claim</th><th>Role</th><th>Maturity</th></tr></thead>
+<tbody>
+<tr><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td><code>restricted_nhek_virasoro_cardy_core</code> Kerr-specific NHEK boundary conditions, chiral Virasoro algebra, and extremal Cardy entropy match</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td></tr>
+<tr><td><a href="../papers/1004.0956.html"><code>1004.0956</code></a></td><td><code>eot_m24_elliptic_genus_observation</code> K3 elliptic-genus multiplicities organize into M24 representation dimensions</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td></tr>
+<tr><td><a href="../papers/1004.0956.html"><code>1004.0956</code></a></td><td><code>k3_sigma_model_geometric_mechanism</code> Natural K3 sigma-model or geometric mechanism explaining the full M24 phenomenon</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td></tr>
+<tr><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td><code>free_abj_thermal_phase_diagnostic</code> Free ABJ thermal phase diagram as diagnostic support for string/Vasiliev/black-hole phases</td><td><code>score_bearing</code></td><td><code>mature_validated</code></td></tr>
+<tr><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td><code>refined_ds_swampland_program</code> Refined de Sitter swampland program with tachyonic, distance, entropy, and TCC-like descendants</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td></tr>
+<tr><td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td><td><code>state_dependence_and_nonperturbative_reconstruction_limits</code> State-dependence and nonperturbative reconstruction limitations</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td></tr>
+<tr><td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td><td><code>petz_interior_reconstruction_gravitational_argument</code> Gravitational Petz-map argument for black-hole interior reconstruction</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td></tr>
+<tr><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td><code>dependent_2209_non_graviton_reuse</code> Dependent reuse of 2209.06728 non-graviton cohomology examples</td><td><code>diagnostic_only</code></td><td><code>immature</code></td></tr>
+<tr><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td><code>rotating_membrane_wilson_surface_diagnostic</code> Rotating membrane and Wilson-surface diagnostics</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td></tr>
+<tr><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td><code>conformal_supergravity_and_planar_scope_control</code> Closed-string/conformal-supergravity caveat and planar-limit scope control</td><td><code>diagnostic_only</code></td><td><code>active_unresolved</code></td></tr>
+<tr><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td><code>cp34_topological_b_model_equivalence</code> CP^{3|4} topological B-model/D-instanton equivalence to perturbative N=4 SYM amplitudes</td><td><code>score_bearing</code></td><td><code>active_unresolved</code></td></tr>
+</tbody></table></div>
+</section>
+<section class="section markdown-section"><h2>Accepted Exceptions</h2>
+<p>None.</p>
+</section>
+<section class="section markdown-section"><h2>Failures</h2>
+<p>None.</p>
+</section>
+<section class="section markdown-section"><h2>Decision</h2>
+<p>Keep v0.4.18 scores unchanged. The clustered claim fates are internally consistent under the current benchmark; uncovered claims should be reviewed when adding future claim-fate clusters.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Generated 2026-05-31. Source artifacts are versioned in the repository.
+  </div>
+</footer>
+
+</body>
+</html>

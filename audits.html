@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audits - Source-Audited Paper Evaluation</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Source-Audited Paper Evaluation</a>
+    <nav><a href="index.html">Results</a><a href="compare.html">Compare</a><a class="active" href="audits.html">Audits</a><a href="methodology.html">Methodology</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+<p class="eyebrow">Audit surface</p><h1>Guardrails And Provenance</h1>
+<section class="metrics">
+<div class="metric"><span>Withheld rows</span><strong>13</strong></div>
+<div class="metric"><span>Claim clusters</span><strong>17</strong></div>
+<div class="metric"><span>Claim coverage</span><strong>61/72</strong></div>
+<div class="metric"><span>Robustness overlaps</span><strong>21</strong></div>
+</section>
+<section class="section audit-category"><div class="section-head"><p class="eyebrow">Audit category</p><h2>Source / evidence quality</h2></div>
+<div class="audit-grid">
+<article class="audit-card"><h2>Source audit details</h2><p>Generated views for 44 ranked-paper source audits, including predecessor controls, source sets, gate status, and miss risk.</p><div class="audit-actions"><a href="audits/source-audits.html">Review source audits</a></div></article>
+</div></section>
+<section class="section audit-category"><div class="section-head"><p class="eyebrow">Audit category</p><h2>Score / ranking robustness</h2></div>
+<div class="audit-grid">
+<article class="audit-card"><h2>Score uncertainty bands</h2><p>Median half-width 1.1; 36 adjacent pair(s) unresolved by combined bands.</p><div class="audit-actions"><a href="audits/score-uncertainty.html">Inspect uncertainty bands</a></div></article>
+<article class="audit-card"><h2>Ranking robustness</h2><p>31 adjacent gap(s) at or below 1.0; 3 cap-bound row(s).</p><div class="audit-actions"><a href="audits/ranking-robustness.html">Check rank robustness</a></div></article>
+</div></section>
+<section class="section audit-category"><div class="section-head"><p class="eyebrow">Audit category</p><h2>Claim fate consistency</h2></div>
+<div class="audit-grid">
+<article class="audit-card"><h2>Claim fate consistency</h2><p>61 clustered claim(s); 0 failure(s).</p><div class="audit-actions"><a href="audits/claim-fate-consistency.html">Check fate consistency</a></div></article>
+<article class="audit-card"><h2>Claim fate registry</h2><p>Machine-readable claim fates for all claim-level adjusted reports.</p><div class="audit-actions"><a href="audits/claim-fate-registry.html">Open claim registry</a></div></article>
+<article class="audit-card"><h2>Claim fate clusters</h2><p>Executable cross-paper consistency benchmark for homogeneous claim families.</p><div class="audit-actions"><a href="audits/claim-fate-clusters.html">Review claim clusters</a></div></article>
+</div></section>
+<section class="section"><h2>Withheld Calibration Policy</h2><p class="summary-copy">Paper-specific calibration provenance is withheld from the public profile. The ranking uses public score fields; withheld signals do not directly determine ranking scores.</p></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Generated 2026-05-31. Source artifacts are versioned in the repository.
+  </div>
+</footer>
+
+</body>
+</html>

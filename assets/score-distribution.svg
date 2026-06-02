@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 230" role="img" aria-labelledby="title desc">
+  <title id="title">Score distribution</title>
+  <desc id="desc">Bar chart of validated final scores for the frozen public ranking.</desc>
+  <rect width="760" height="230" fill="#ffffff"/>
+  <line x1="42" y1="200" x2="748" y2="200" stroke="#98a2b3"/>
+  <line x1="42" y1="20" x2="42" y2="200" stroke="#98a2b3"/>
+  <text x="42" y="16" font-size="12" fill="#667085">Validated final score</text>
+  <text x="692" y="222" font-size="12" fill="#667085">Rank 44</text>
+  <text x="42" y="222" font-size="12" fill="#667085">Rank 1</text>
+  <rect x="42.0" y="24.0" width="13.91" height="176.0" fill="#16794c"><title>Rank 1 hep-th/9711200: 99.0</title></rect>
+  <rect x="57.91" y="29.19999999999999" width="13.91" height="170.8" fill="#16794c"><title>Rank 2 hep-th/9601029: 97.7</title></rect>
+  <rect x="73.82" y="34.80000000000001" width="13.91" height="165.2" fill="#16794c"><title>Rank 3 hep-th/0603001: 96.3</title></rect>
+  <rect x="89.72999999999999" y="34.80000000000001" width="13.91" height="165.2" fill="#16794c"><title>Rank 4 hep-th/9510017: 96.3</title></rect>
+  <rect x="105.64" y="36.80000000000001" width="13.91" height="163.2" fill="#16794c"><title>Rank 5 1412.5148: 95.8</title></rect>
+  <rect x="121.55" y="38.0" width="13.91" height="162.0" fill="#a05a00"><title>Rank 6 1905.08255: 95.5</title></rect>
+  <rect x="137.45" y="39.599999999999994" width="13.91" height="160.4" fill="#a05a00"><title>Rank 7 1905.08762: 95.1</title></rect>
+  <rect x="153.36" y="46.0" width="13.91" height="154.0" fill="#16794c"><title>Rank 8 hep-th/0105097: 93.5</title></rect>
+  <rect x="169.26999999999998" y="49.599999999999994" width="13.91" height="150.4" fill="#16794c"><title>Rank 9 hep-th/9802109: 92.6</title></rect>
+  <rect x="185.18" y="53.599999999999994" width="13.91" height="146.4" fill="#a05a00"><title>Rank 10 hep-th/9610043: 91.6</title></rect>
+  <rect x="201.09" y="56.400000000000006" width="13.91" height="143.6" fill="#16794c"><title>Rank 11 hep-th/0605073: 90.9</title></rect>
+  <rect x="217.0" y="57.599999999999994" width="13.91" height="142.4" fill="#16794c"><title>Rank 12 hep-th/0210114: 90.6</title></rect>
+  <rect x="232.91" y="61.599999999999994" width="13.91" height="138.4" fill="#a05a00"><title>Rank 13 1911.12333: 89.6</title></rect>
+  <rect x="248.82" y="63.19999999999999" width="13.91" height="136.8" fill="#16794c"><title>Rank 14 1802.04445: 89.2</title></rect>
+  <rect x="264.73" y="64.4" width="13.91" height="135.6" fill="#a05a00"><title>Rank 15 1911.11977: 88.9</title></rect>
+  <rect x="280.64" y="67.19999999999999" width="13.91" height="132.8" fill="#a05a00"><title>Rank 16 hep-th/0312171: 88.2</title></rect>
+  <rect x="296.55" y="68.0" width="13.91" height="132.0" fill="#16794c"><title>Rank 17 1802.04790: 88.0</title></rect>
+  <rect x="312.45" y="68.80000000000001" width="13.91" height="131.2" fill="#a05a00"><title>Rank 18 1004.0956: 87.8</title></rect>
+  <rect x="328.36" y="69.19999999999999" width="13.91" height="130.8" fill="#16794c"><title>Rank 19 hep-th/0412308: 87.7</title></rect>
+  <rect x="344.27" y="69.6" width="13.91" height="130.4" fill="#16794c"><title>Rank 20 hep-th/9910096: 87.6</title></rect>
+  <rect x="360.18" y="72.0" width="13.91" height="128.0" fill="#16794c"><title>Rank 21 0912.3462: 87.0</title></rect>
+  <rect x="376.09" y="72.8" width="13.91" height="127.2" fill="#16794c"><title>Rank 22 hep-th/0403047: 86.8</title></rect>
+  <rect x="392.0" y="73.6" width="13.91" height="126.4" fill="#16794c"><title>Rank 23 1804.00949: 86.6</title></rect>
+  <rect x="407.91" y="75.2" width="13.91" height="124.8" fill="#a05a00"><title>Rank 24 2209.06728: 86.2</title></rect>
+  <rect x="423.82" y="76.0" width="13.91" height="124.0" fill="#16794c"><title>Rank 25 hep-th/0501052: 86.0</title></rect>
+  <rect x="439.73" y="79.6" width="13.91" height="120.4" fill="#a05a00"><title>Rank 26 hep-th/0205131: 85.1</title></rect>
+  <rect x="455.64" y="84.8" width="13.91" height="115.2" fill="#a05a00"><title>Rank 27 hep-th/0502058: 83.8</title></rect>
+  <rect x="471.55" y="88.0" width="13.91" height="112.0" fill="#6741d9"><title>Rank 28 2402.10129: 83.0</title></rect>
+  <rect x="487.45" y="90.0" width="13.91" height="110.0" fill="#a05a00"><title>Rank 29 hep-th/0301240: 82.5</title></rect>
+  <rect x="503.36" y="91.2" width="13.91" height="108.8" fill="#a05a00"><title>Rank 30 2011.01953: 82.2</title></rect>
+  <rect x="519.27" y="92.4" width="13.91" height="107.6" fill="#a05a00"><title>Rank 31 1207.4485: 81.9</title></rect>
+  <rect x="535.1800000000001" y="93.2" width="13.91" height="106.8" fill="#a05a00"><title>Rank 32 2208.02757: 81.7</title></rect>
+  <rect x="551.0899999999999" y="101.6" width="13.91" height="98.4" fill="#a05a00"><title>Rank 33 1306.0533: 79.6</title></rect>
+  <rect x="567.0" y="105.6" width="13.91" height="94.4" fill="#a05a00"><title>Rank 34 1806.08362: 78.6</title></rect>
+  <rect x="582.91" y="114.0" width="13.91" height="86.0" fill="#16794c"><title>Rank 35 1907.03363: 76.5</title></rect>
+  <rect x="598.82" y="118.4" width="13.91" height="81.6" fill="#16794c"><title>Rank 36 1405.0412: 75.4</title></rect>
+  <rect x="614.73" y="126.8" width="13.91" height="73.2" fill="#16794c"><title>Rank 37 1604.07818: 73.3</title></rect>
+  <rect x="630.64" y="130.4" width="13.91" height="69.6" fill="#16794c"><title>Rank 38 1706.03917: 72.4</title></rect>
+  <rect x="646.55" y="132.4" width="13.91" height="67.6" fill="#16794c"><title>Rank 39 0906.0591: 71.9</title></rect>
+  <rect x="662.45" y="135.6" width="13.91" height="64.4" fill="#a05a00"><title>Rank 40 2006.06872: 71.1</title></rect>
+  <rect x="678.36" y="150.8" width="13.91" height="49.2" fill="#b42318"><title>Rank 41 0809.4266: 67.3</title></rect>
+  <rect x="694.27" y="159.6" width="13.91" height="40.4" fill="#b42318"><title>Rank 42 1001.0785: 65.1</title></rect>
+  <rect x="710.18" y="189.2" width="13.91" height="10.8" fill="#6741d9"><title>Rank 43 2312.07820: 57.7</title></rect>
+  <rect x="726.09" y="200.0" width="13.91" height="0.0" fill="#b42318"><title>Rank 44 0706.3359: 55.0</title></rect>
+</svg>

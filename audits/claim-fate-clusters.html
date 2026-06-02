@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claim Fate Clusters - Source-Audited Paper Evaluation</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">Source-Audited Paper Evaluation</a>
+    <nav><a href="../index.html">Results</a><a href="../compare.html">Compare</a><a class="active" href="../audits.html">Audits</a><a href="../methodology.html">Methodology</a></nav>
+  </div>
+</header>
+
+<main class="wrap audit-detail">
+<p class="eyebrow"><a href="../audits.html">Audits</a> / Claim Fate Clusters</p>
+<h1>Claim Fate Clusters</h1>
+<section class="metrics">
+<div class="metric"><span>Active clusters</span><strong>17</strong></div>
+<div class="metric"><span>Clustered claims</span><strong>61</strong></div>
+<div class="metric"><span>Exceptions</span><strong>0</strong></div>
+<div class="metric"><span>Cluster coverage</span><strong>61/72</strong></div>
+</section>
+<section class="section link-panel" aria-label="Related links">
+<h2>Audit navigation</h2>
+<div class="link-groups">
+<div class="link-group">
+<h3>Related pages</h3>
+<div class="link-list">
+<a href="claim-fate-consistency.html">Consistency page</a>
+</div></div>
+</div></section>
+<p class="notice canonical-notice">Generated view. The raw YAML/Markdown artifact is the canonical source.</p>
+<section class="section"><h2>Cluster Rules</h2>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Cluster</th><th>Claims</th><th>Rule</th><th>Rationale</th></tr></thead><tbody>
+<tr>
+<td><code>island_page_curve_core_validated</code><span class="paper-title">Island/Page-curve core derivations and controlled entropy calculations</span></td>
+<td>6</td>
+<td>role=score_bearing; maturity=mature_validated; cap=false; retro&gt;=94</td>
+<td>Same public cluster treatment should keep the controlled island and replica-wormhole Page-curve claims score-bearing, mature validated, and uncapped.</td>
+</tr>
+<tr>
+<td><code>hayden_preskill_decoding_validated</code><span class="paper-title">Hayden-Preskill entanglement-wedge decoding descendants</span></td>
+<td>2</td>
+<td>role=score_bearing; maturity=mature_validated; cap=false; retro&gt;=94</td>
+<td>The two decoding/timescale claims are treated as mature validated technical descendants, not as unresolved complete-resolution claims.</td>
+</tr>
+<tr>
+<td><code>fixed_theory_information_resolution_unresolved_diagnostic</code><span class="paper-title">Complete fixed-theory black-hole information-resolution claims</span></td>
+<td>4</td>
+<td>role=diagnostic_only; maturity=active_unresolved; cap=false; retro&lt;=80</td>
+<td>Broad complete-resolution claims remain diagnostic-only and active unresolved across island and replica-wormhole reports.</td>
+</tr>
+<tr>
+<td><code>replica_wormhole_scope_control_diagnostics</code><span class="paper-title">Replica-wormhole scope-control and interpretive diagnostic claims</span></td>
+<td>3</td>
+<td>role=diagnostic_only; maturity=active_unresolved/mature_validated; cap=false</td>
+<td>Scope-control claims may have different maturity, but they should remain diagnostic-only and uncapped so they do not dilute or inflate the score-bearing core.</td>
+</tr>
+<tr>
+<td><code>matrix_model_validated_core</code><span class="paper-title">BFSS matrix-model validated technical core</span></td>
+<td>2</td>
+<td>role=score_bearing; maturity=mature_validated; cap=false; retro&gt;=90</td>
+<td>The directly validated matrix-model and supergravity/membrane evidence claims should remain mature validated, score-bearing, and uncapped.</td>
+</tr>
+<tr>
+<td><code>matrix_model_broad_m_theory_active_unresolved</code><span class="paper-title">BFSS broad M-theory equivalence and program seed claims</span></td>
+<td>2</td>
+<td>role=score_bearing; maturity=active_unresolved; cap=false; retro&gt;=82</td>
+<td>Broad equivalence and program-seed claims stay score-bearing but active unresolved, rather than being promoted to mature validation.</td>
+</tr>
+<tr>
+<td><code>twistor_amplitude_validated_descendants</code><span class="paper-title">Twistor-amplitude validated descendant claims</span></td>
+<td>3</td>
+<td>role=score_bearing; maturity=mature_validated; cap=false; retro&gt;=90</td>
+<td>Twistor localization and direct on-shell amplitude descendants are mature validated technical contributions, distinct from active unresolved string-equivalence caveats.</td>
+</tr>
+<tr>
+<td><code>higher_spin_validated_core</code><span class="paper-title">Higher-spin/vector-model validated technical core</span></td>
+<td>3</td>
+<td>role=score_bearing; maturity=mature_validated; cap=false; retro&gt;=84</td>
+<td>Core higher-spin holography, coupling-test, and spectrum-dictionary claims should remain mature validated and uncapped.</td>
+</tr>
+<tr>
+<td><code>higher_spin_string_bridge_active_unresolved</code><span class="paper-title">Higher-spin/stringy bridge and ABJ triality active claims</span></td>
+<td>4</td>
+<td>role=score_bearing; maturity=active_unresolved; cap=false; retro&gt;=70; retro&lt;=85</td>
+<td>String/Vasiliev interpolation and tensionless-string bridge claims remain score-bearing but active unresolved, matching their later technical but incomplete status.</td>
+</tr>
+<tr>
+<td><code>de_sitter_control_active_unresolved</code><span class="paper-title">de Sitter control and strong no-dS conjecture active-unresolved claims</span></td>
+<td>6</td>
+<td>role=score_bearing; maturity=active_unresolved; cap=false; retro&gt;=55; retro&lt;=72</td>
+<td>Fully controlled dS, uplift, anthropic late-time, and strong no-dS claims remain active unresolved, not mature validated or capped as failed.</td>
+</tr>
+<tr>
+<td><code>de_sitter_field_opening_validated</code><span class="paper-title">Flux/LVS/swampland field-opening validated substrate</span></td>
+<td>7</td>
+<td>role=score_bearing; maturity=mature_validated; cap=false; retro&gt;=84</td>
+<td>Moduli-stabilization substrate and field-opening diagnostic/no-go claims are mature validated contributions distinct from active dS-control claims.</td>
+</tr>
+<tr>
+<td><code>er_epr_restricted_descendants_validated</code><span class="paper-title">ER=EPR restricted holographic and traversable-wormhole descendants</span></td>
+<td>2</td>
+<td>role=score_bearing; maturity=mature_validated; cap=false; retro&gt;=88</td>
+<td>Restricted holographic examples and traversable-wormhole descendants are mature validated descendants, unlike the broad universal ER=EPR claims.</td>
+</tr>
+<tr>
+<td><code>er_epr_broad_universal_active_unresolved</code><span class="paper-title">ER=EPR broad universal/firewall-resolution claims</span></td>
+<td>3</td>
+<td>role=score_bearing; maturity=active_unresolved; cap=false; retro&gt;=55; retro&lt;=82</td>
+<td>Broad conjectural and firewall-resolution claims remain active unresolved and uncapped, not treated as validated by restricted descendant successes.</td>
+</tr>
+<tr>
+<td><code>fruitful_but_wrong_capped_broad_claims</code><span class="paper-title">Mature invalidated but fruitful broad-program claims</span></td>
+<td>4</td>
+<td>role=score_bearing; maturity=mature_invalidated; cap=true; retro&lt;=55</td>
+<td>Broad claims later judged invalidated but field-opening should share the same fruitful-but-wrong claim-level cap treatment.</td>
+</tr>
+<tr>
+<td><code>fortuitous_cohomology_immature_score_bearing</code><span class="paper-title">Fortuitous cohomology immature score-bearing claims</span></td>
+<td>3</td>
+<td>role=score_bearing; maturity=immature; cap=false; retro&gt;=68; retro&lt;=80</td>
+<td>The main 2402.10129 claims are kept score-bearing but immature, while dependent source-reuse diagnostics remain outside the score-bearing cluster.</td>
+</tr>
+<tr>
+<td><code>syk_validated_technical_consolidation</code><span class="paper-title">SYK technical consolidation claims</span></td>
+<td>4</td>
+<td>role=score_bearing; maturity=mature_validated; cap=false; retro&gt;=82; retro&lt;=84</td>
+<td>The citable SYK/Schwarzian writeup and near-AdS2 bridge claims are mature validated technical consolidation claims.</td>
+</tr>
+<tr>
+<td><code>entropic_gravity_active_uncapped_survivors</code><span class="paper-title">Entropic-gravity active unresolved uncapped survivor claims</span></td>
+<td>3</td>
+<td>role=score_bearing; maturity=active_unresolved; cap=false; retro&gt;=50; retro&lt;=72</td>
+<td>The heuristic and field-opening entropic-gravity claims remain score-bearing but active unresolved, while literal invalidated claims carry the fruitful-but-wrong cap.</td>
+</tr>
+</tbody></table></div></section>
+<section class="section"><h2>Claim References</h2>
+<div class="table-wrap audit-table"><table>
+<thead><tr><th>Cluster</th><th>Paper</th><th>Claim</th></tr></thead><tbody>
+<tr>
+<td><code>island_page_curve_core_validated</code></td>
+<td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td>
+<td><code>island_page_curve_entanglement_wedge_breakthrough</code></td>
+</tr>
+<tr>
+<td><code>island_page_curve_core_validated</code></td>
+<td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td>
+<td><code>bulk_entropy_qes_motion_in_evaporation</code></td>
+</tr>
+<tr>
+<td><code>island_page_curve_core_validated</code></td>
+<td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td>
+<td><code>page_time_qes_phase_transition</code></td>
+</tr>
+<tr>
+<td><code>island_page_curve_core_validated</code></td>
+<td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td>
+<td><code>replica_wormhole_derivation_of_island_rule</code></td>
+</tr>
+<tr>
+<td><code>island_page_curve_core_validated</code></td>
+<td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td>
+<td><code>controlled_page_curve_entropy_calculations</code></td>
+</tr>
+<tr>
+<td><code>island_page_curve_core_validated</code></td>
+<td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td>
+<td><code>replica_wormhole_page_curve_justification</code></td>
+</tr>
+<tr>
+<td><code>hayden_preskill_decoding_validated</code></td>
+<td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td>
+<td><code>hayden_preskill_decoding_generalization</code></td>
+</tr>
+<tr>
+<td><code>hayden_preskill_decoding_validated</code></td>
+<td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td>
+<td><code>hayden_preskill_entanglement_wedge_timescale</code></td>
+</tr>
+<tr>
+<td><code>fixed_theory_information_resolution_unresolved_diagnostic</code></td>
+<td><a href="../papers/1905.08255.html"><code>1905.08255</code></a></td>
+<td><code>complete_fixed_theory_information_paradox_resolution</code></td>
+</tr>
+<tr>
+<td><code>fixed_theory_information_resolution_unresolved_diagnostic</code></td>
+<td><a href="../papers/1905.08762.html"><code>1905.08762</code></a></td>
+<td><code>complete_fixed_theory_information_paradox_resolution</code></td>
+</tr>
+<tr>
+<td><code>fixed_theory_information_resolution_unresolved_diagnostic</code></td>
+<td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td>
+<td><code>full_fixed_theory_information_paradox_resolution</code></td>
+</tr>
+<tr>
+<td><code>fixed_theory_information_resolution_unresolved_diagnostic</code></td>
+<td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td>
+<td><code>complete_fixed_theory_information_paradox_resolution</code></td>
+</tr>
+<tr>
+<td><code>replica_wormhole_scope_control_diagnostics</code></td>
+<td><a href="../papers/1911.12333.html"><code>1911.12333</code></a></td>
+<td><code>indirect_er_epr_entanglement_geometry_support</code></td>
+</tr>
+<tr>
+<td><code>replica_wormhole_scope_control_diagnostics</code></td>
+<td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td>
+<td><code>jt_syk_and_west_coast_model_applications</code></td>
+</tr>
+<tr>
+<td><code>replica_wormhole_scope_control_diagnostics</code></td>
+<td><a href="../papers/1911.11977.html"><code>1911.11977</code></a></td>
+<td><code>ensemble_average_and_factorization_interpretation</code></td>
+</tr>
+<tr>
+<td><code>matrix_model_validated_core</code></td>
+<td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td>
+<td><code>d0_matrix_dlcq_framework</code></td>
+</tr>
+<tr>
+<td><code>matrix_model_validated_core</code></td>
+<td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td>
+<td><code>supergravity_membrane_evidence_package</code></td>
+</tr>
+<tr>
+<td><code>matrix_model_broad_m_theory_active_unresolved</code></td>
+<td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td>
+<td><code>full_uncompactified_m_theory_equivalence</code></td>
+</tr>
+<tr>
+<td><code>matrix_model_broad_m_theory_active_unresolved</code></td>
+<td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td>
+<td><code>holographic_nonperturbative_program_seed</code></td>
+</tr>
+<tr>
+<td><code>twistor_amplitude_validated_descendants</code></td>
+<td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td>
+<td><code>twistor_space_localization_of_yang_mills_amplitudes</code></td>
+</tr>
+<tr>
+<td><code>twistor_amplitude_validated_descendants</code></td>
+<td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td>
+<td><code>direct_twistor_amplitude_descendants</code></td>
+</tr>
+<tr>
+<td><code>twistor_amplitude_validated_descendants</code></td>
+<td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td>
+<td><code>modern_on_shell_amplitude_geometry_lineage</code></td>
+</tr>
+<tr>
+<td><code>higher_spin_validated_core</code></td>
+<td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td>
+<td><code>free_large_n_scft_higher_spin_duality</code></td>
+</tr>
+<tr>
+<td><code>higher_spin_validated_core</code></td>
+<td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td>
+<td><code>ads4_cubic_scalar_coupling_test</code></td>
+</tr>
+<tr>
+<td><code>higher_spin_validated_core</code></td>
+<td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td>
+<td><code>maximal_susy_higher_spin_spectrum_dictionary</code></td>
+</tr>
+<tr>
+<td><code>higher_spin_string_bridge_active_unresolved</code></td>
+<td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td>
+<td><code>tensionless_string_m_theory_bridge_active_unresolved</code></td>
+</tr>
+<tr>
+<td><code>higher_spin_string_bridge_active_unresolved</code></td>
+<td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td>
+<td><code>supersymmetric_vasiliev_boundary_dictionary</code></td>
+</tr>
+<tr>
+<td><code>higher_spin_string_bridge_active_unresolved</code></td>
+<td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td>
+<td><code>large_n_finite_m_abj_vasiliev_triality</code></td>
+</tr>
+<tr>
+<td><code>higher_spin_string_bridge_active_unresolved</code></td>
+<td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td>
+<td><code>strong_coupling_stringy_interpolation</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_control_active_unresolved</code></td>
+<td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td>
+<td><code>de_sitter_uplift_and_full_control_claim</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_control_active_unresolved</code></td>
+<td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td>
+<td><code>anti_d3_uplift_to_metastable_de_sitter</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_control_active_unresolved</code></td>
+<td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td>
+<td><code>fully_controlled_compact_de_sitter_vacua_claim</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_control_active_unresolved</code></td>
+<td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td>
+<td><code>anthropic_lifetime_and_late_time_cosmology_claims</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_control_active_unresolved</code></td>
+<td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td>
+<td><code>original_strong_gradient_bound</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_control_active_unresolved</code></td>
+<td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td>
+<td><code>universal_no_ds_and_cosmological_predictions</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_field_opening_validated</code></td>
+<td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td>
+<td><code>large_volume_ads_kahler_moduli_stabilization</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_field_opening_validated</code></td>
+<td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td>
+<td><code>alpha_prime_nonperturbative_lvs_mechanism</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_field_opening_validated</code></td>
+<td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td>
+<td><code>lvs_phenomenology_and_axion_substrate</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_field_opening_validated</code></td>
+<td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td>
+<td><code>flux_and_nonperturbative_moduli_stabilization_package</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_field_opening_validated</code></td>
+<td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td>
+<td><code>string_landscape_field_opening_program</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_field_opening_validated</code></td>
+<td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td>
+<td><code>field_opening_diagnostic_agenda</code></td>
+</tr>
+<tr>
+<td><code>de_sitter_field_opening_validated</code></td>
+<td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td>
+<td><code>regime_limited_no_go_and_control_pressure</code></td>
+</tr>
+<tr>
+<td><code>er_epr_restricted_descendants_validated</code></td>
+<td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td>
+<td><code>restricted_holographic_er_epr_examples</code></td>
+</tr>
+<tr>
+<td><code>er_epr_restricted_descendants_validated</code></td>
+<td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td>
+<td><code>traversable_wormhole_teleportation_descendants</code></td>
+</tr>
+<tr>
+<td><code>er_epr_broad_universal_active_unresolved</code></td>
+<td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td>
+<td><code>er_epr_conjectural_synthesis</code></td>
+</tr>
+<tr>
+<td><code>er_epr_broad_universal_active_unresolved</code></td>
+<td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td>
+<td><code>universal_all_entanglement_wormhole_claim</code></td>
+</tr>
+<tr>
+<td><code>er_epr_broad_universal_active_unresolved</code></td>
+<td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td>
+<td><code>firewall_resolution_claim</code></td>
+</tr>
+<tr>
+<td><code>fruitful_but_wrong_capped_broad_claims</code></td>
+<td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td>
+<td><code>broad_standard_local_2d_cft_duality</code></td>
+</tr>
+<tr>
+<td><code>fruitful_but_wrong_capped_broad_claims</code></td>
+<td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td>
+<td><code>generic_kerr_microscopic_state_counting</code></td>
+</tr>
+<tr>
+<td><code>fruitful_but_wrong_capped_broad_claims</code></td>
+<td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td>
+<td><code>literal_gravity_and_inertia_as_entropic_force</code></td>
+</tr>
+<tr>
+<td><code>fruitful_but_wrong_capped_broad_claims</code></td>
+<td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td>
+<td><code>entropic_cosmology_and_dark_universe_descendants</code></td>
+</tr>
+<tr>
+<td><code>fortuitous_cohomology_immature_score_bearing</code></td>
+<td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td>
+<td><code>fortuitous_cohomology_taxonomy</code></td>
+</tr>
+<tr>
+<td><code>fortuitous_cohomology_immature_score_bearing</code></td>
+<td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td>
+<td><code>holographic_covering_interpretation</code></td>
+</tr>
+<tr>
+<td><code>fortuitous_cohomology_immature_score_bearing</code></td>
+<td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td>
+<td><code>black_hole_microstate_interpretation</code></td>
+</tr>
+<tr>
+<td><code>syk_validated_technical_consolidation</code></td>
+<td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td>
+<td><code>syk_large_n_two_point_bilocal_writeup</code></td>
+</tr>
+<tr>
+<td><code>syk_validated_technical_consolidation</code></td>
+<td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td>
+<td><code>four_point_kernel_chaos_schwarzian_writeup</code></td>
+</tr>
+<tr>
+<td><code>syk_validated_technical_consolidation</code></td>
+<td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td>
+<td><code>near_extremal_black_hole_near_ads2_bridge</code></td>
+</tr>
+<tr>
+<td><code>syk_validated_technical_consolidation</code></td>
+<td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td>
+<td><code>canonical_technical_consolidation_reference</code></td>
+</tr>
+<tr>
+<td><code>entropic_gravity_active_uncapped_survivors</code></td>
+<td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td>
+<td><code>heuristic_newton_inertia_derivation</code></td>
+</tr>
+<tr>
+<td><code>entropic_gravity_active_uncapped_survivors</code></td>
+<td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td>
+<td><code>relativistic_einstein_komar_generalization</code></td>
+</tr>
+<tr>
+<td><code>entropic_gravity_active_uncapped_survivors</code></td>
+<td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td>
+<td><code>field_opening_emergent_gravity_agenda</code></td>
+</tr>
+</tbody></table></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Generated 2026-05-31. Source artifacts are versioned in the repository.
+  </div>
+</footer>
+
+</body>
+</html>
