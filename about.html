@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About And Scope - Source-Audited Paper Evaluation</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Source-Audited Paper Evaluation</a>
+    <nav><a href="index.html">Results</a><a href="compare.html">Compare</a><a href="audits.html">Audits</a><a href="methodology.html">Methodology</a><a class="active" href="about.html">About</a></nav>
+  </div>
+</header>
+
+<main class="wrap about-page">
+<p class="eyebrow">About / Scope</p>
+<h1>Why Build A Source-Audited Evaluation System?</h1>
+<p class="lead">This project treats research evaluation as a practical route toward studying AI scientific taste: the ability to recognize meaningful contributions, compare them against predecessors, and use that judgment to ask better research questions.</p>
+<nav class="page-nav" aria-label="On this page">
+<span>On this page</span>
+<div>
+<a href="#motivation">Motivation</a>
+<a href="#score-meaning">What The Scores Mean</a>
+<a href="#public-boundaries">Public Boundaries</a>
+<a href="#citation-feedback">Citation And Feedback</a>
+<a href="#update-policy">Update Policy</a>
+</div></nav>
+<section class="metrics">
+<div class="metric"><span>Ranking id</span><strong>2026-05-30-v0.4.18-public-ranking</strong></div>
+<div class="metric"><span>Ranked papers</span><strong>44</strong></div>
+<div class="metric"><span>Claim-level reports</span><strong>17</strong></div>
+<div class="metric"><span>Release checks</span><strong>73</strong></div>
+<div class="metric"><span>Public profile</span><strong>redacted</strong></div>
+<div class="metric"><span>Current scope</span><strong>hep-th / high-energy theory</strong></div>
+</section>
+<section class="section" id="motivation">
+  <div class="section-head"><p class="eyebrow">Motivation</p><h2>Scientific Taste Is Part Of The Research Problem</h2></div>
+  <p class="summary-copy">A useful scientific AI should not only summarize papers or predict citations. It should learn what makes a research direction deep, fertile, technically nontrivial, and robust under later evidence. That kind of taste is closely related to the ability to formulate good research questions: questions that are well-posed, connected to real obstacles, discriminating between alternatives, and likely to reveal structure rather than merely follow fashion.</p>
+  <div class="method-grid">
+    <article class="method-card"><h2>Evaluate Contributions</h2><p>Rank papers by source-audited scientific contribution, not by author authority, venue, citation count, or later fame.</p></article>
+    <article class="method-card"><h2>Learn Taste</h2><p>Use evaluation as a training signal for recognizing depth, originality, technical leverage, and field-shaping questions.</p></article>
+    <article class="method-card"><h2>Ask Better Questions</h2><p>Connect scores to predecessor gaps, unresolved claims, and claim-level fates so future questions target real scientific bottlenecks.</p></article>
+  </div>
+</section>
+
+<section class="section" id="score-meaning">
+  <div class="section-head"><p class="eyebrow">Score meaning</p><h2>What The Scores Are For</h2></div>
+  <p class="summary-copy">The ranking is a measurement surface for a research-evaluation method. A score is meant to summarize a paper's evaluated contribution after source audit, predecessor comparison, claim-level scoring where needed, retrospective validation, uncertainty bands, and withheld calibration details.</p>
+  <div class="formula-grid">
+    <article class="formula-box"><h3>Not popularity</h3><p>The score is not a citation count, author-prestige proxy, venue judgment, or public consensus estimate.</p></article>
+    <article class="formula-box"><h3>Not pure hindsight</h3><p>Originality is preserved as an ex ante component, while later evidence can validate, leave unresolved, or cap claims.</p></article>
+    <article class="formula-box"><h3>Not one-size-fits-all</h3><p>Different claims in one paper can have different later fates, so claim-level scoring is used when paper-level scoring would hide important structure.</p></article>
+    <article class="formula-box"><h3>Not final authority</h3><p>Scores are versioned research artifacts. Evidence misses, predecessor corrections, or claim-fate updates should change future releases.</p></article>
+  </div>
+</section>
+
+<section class="section" id="public-boundaries">
+  <div class="section-head"><p class="eyebrow">Public boundaries</p><h2>How To Read The Public Site</h2></div>
+  <p class="summary-copy">The current public scope is hep-th / high-energy theory. The method is intentionally broader than that scope: source audit, predecessor controls, claim fates, uncertainty, and update discipline are meant to be portable to other research areas after new calibration sets are built.</p>
+  <ul class="compact-list about-list">
+    <li><strong>Read rank clusters carefully.</strong> Adjacent rows with overlapping uncertainty bands should be treated as local clusters, not precise total order.</li>
+    <li><strong>Inspect claims, not only paper scores.</strong> Some papers contain validated, unresolved, diagnostic, and invalidated claims at the same time.</li>
+    <li><strong>Use audits to challenge scores.</strong> The best correction is specific evidence: missed predecessors, stronger follow-up evidence, no-go results, or claim-fate updates.</li>
+    <li><strong>Respect withheld boundaries.</strong> Paper-specific calibration provenance is withheld in the public profile; public readers should evaluate the visible source evidence, report fields, and audit guardrails.</li>
+  </ul>
+</section>
+
+    <section class="section two-col" id="citation-feedback">
+      <article>
+        <div class="section-head"><p class="eyebrow">Citation</p><h2>How To Cite</h2></div>
+        <p class="summary-copy">When citing the website, include the project name, ranking id, public URL, and access date. If referencing a specific paper row, include the paper id, rank, score, and versioned ranking id.</p>
+        <div class="formula-box formula-wide"><pre><code>Source-Audited Paper Evaluation.
+Ranking: 2026-05-30-v0.4.18-public-ranking.
+URL: https://chimingchang.github.io/source-audited-paper-evaluation-site/
+Accessed: YYYY-MM-DD.</code></pre></div>
+      </article>
+      <article>
+        <div class="section-head"><p class="eyebrow">Feedback</p><h2>What Feedback Is Most Useful</h2></div>
+        <ul class="compact-list about-list">
+          <li>missed predecessors or earlier equivalent results;</li>
+          <li>follow-up evidence that validates, weakens, or invalidates a claim;</li>
+          <li>claim splits where one paper-level score hides multiple later fates;</li>
+          <li>calibration cases that expose authority, citation, recency, or hindsight bias;</li>
+          <li>methodology objections that can be turned into executable checks.</li>
+        </ul>
+      </article>
+    </section>
+
+<section class="section" id="update-policy">
+  <div class="section-head"><p class="eyebrow">Update policy</p><h2>How Public Changes Should Happen</h2></div>
+  <div class="pipeline-grid">
+    <article class="pipeline-step"><span>1</span><h3>Evidence first</h3><p>Corrections should enter as source-audit, evidence-pack, claim-fate, or calibration updates before ranking changes.</p></article>
+    <article class="pipeline-step"><span>2</span><h3>Versioned outputs</h3><p>Ranking YAML, generated pages, methodology, robustness, uncertainty, and readiness checks remain tied to versioned artifacts.</p></article>
+    <article class="pipeline-step"><span>3</span><h3>Public gate</h3><p>The redacted public-site gate must pass before deployment, and the source repository remains separate from the site-only public repository.</p></article>
+    <article class="pipeline-step"><span>4</span><h3>Deployment record</h3><p>Public deployments are pushed through the guarded deployment script and are traceable in the site-only repository history.</p></article>
+  </div>
+</section>
+
+<section class="section link-panel" aria-label="Related links">
+<h2>About paths</h2>
+<div class="link-groups">
+<div class="link-group">
+<h3>Related pages</h3>
+<div class="link-list">
+<a class="secondary-link" href="index.html#ranking">Results table</a>
+<a href="methodology.html">Methodology</a>
+<a href="audits.html">Audit dashboard</a>
+<a href="compare.html">Rank neighbor comparison</a>
+</div></div>
+<div class="link-group">
+<h3>Public repositories</h3>
+<div class="link-list">
+<a class="secondary-link" href="https://github.com/chimingchang/source-audited-paper-evaluation-site">Public site repository</a>
+<a class="secondary-link" href="https://chimingchang.github.io/source-audited-paper-evaluation-site/">Public website</a>
+</div></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Generated 2026-05-31. Source artifacts are versioned in the repository.
+  </div>
+</footer>
+
+</body>
+</html>

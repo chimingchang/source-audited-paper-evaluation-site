@@ -42,6 +42,11 @@ h3 { font-size: 14px; margin: 0 0 10px; letter-spacing: 0; }
 .metric { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; min-height: 72px; }
 .metric span { display: block; color: var(--muted); font-size: 12px; }
 .metric strong { display: block; font-size: 21px; margin-top: 4px; overflow-wrap: anywhere; }
+.scope-note { display: grid; grid-template-columns: minmax(0, 1fr) max-content; gap: 18px; align-items: center; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 0; margin: 22px 0; }
+.scope-note h2 { margin-bottom: 8px; }
+.scope-note p { color: #344054; margin: 0 0 8px; max-width: 860px; }
+.scope-note p:last-child { margin-bottom: 0; }
+.scope-note a { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; background: var(--soft); white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
 .filters { display: grid; grid-template-columns: minmax(220px, 1fr) 180px repeat(4, max-content); gap: 10px; align-items: end; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 22px 0; }
 .compare-filters { grid-template-columns: minmax(240px, 1fr) repeat(6, max-content) max-content; }
 label span { display: block; color: var(--muted); font-size: 12px; margin-bottom: 4px; }
@@ -86,6 +91,7 @@ dd { margin: 3px 0 0; font-weight: 600; overflow-wrap: anywhere; }
 .audit-category .audit-grid { margin-top: 10px; }
 .audit-category + .audit-category { margin-top: 24px; }
 .pipeline-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+.reading-grid > *, .method-grid > *, .formula-grid > *, .pipeline-grid > *, .two-col > * { min-width: 0; }
 .pipeline-step { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; min-width: 0; }
 .pipeline-step span { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 999px; background: var(--soft); color: var(--blue); font-weight: 700; margin-bottom: 10px; }
 .pipeline-step p, .formula-box p { color: #344054; margin: 0 0 10px; }
@@ -98,7 +104,7 @@ dd { margin: 3px 0 0; font-weight: 600; overflow-wrap: anywhere; }
 .reading-map { margin: 24px 0; }
 .section-head { margin-bottom: 10px; }
 .section-head h2 { margin-bottom: 0; }
-.reading-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.reading-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
 .reading-card { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: #fff; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
 .reading-card p { color: #344054; margin: 0; }
 .reading-card a { align-self: flex-start; display: inline-flex; align-items: center; min-height: 32px; border: 1px solid var(--line); border-radius: 6px; padding: 6px 9px; background: var(--soft); max-width: 100%; overflow-wrap: anywhere; white-space: normal; }
@@ -156,6 +162,8 @@ dd { margin: 3px 0 0; font-weight: 600; overflow-wrap: anywhere; }
 .two-col { grid-template-columns: minmax(0, 1fr) minmax(220px, .45fr); align-items: start; }
 .compact-list { margin: 0; padding-left: 18px; }
 .compact-list li { margin: 5px 0; }
+.about-list { max-width: 920px; }
+.about-list li { margin: 8px 0; }
 .compact-list span, .muted { color: var(--muted); }
 .notice { border-left: 4px solid var(--violet); background: #f7f4ff; padding: 10px 12px; margin: 12px 0; }
 .big-number { font-size: 32px; font-weight: 700; margin: 0; }
@@ -163,7 +171,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); padding: 18px 0; }
 .site-footer a { margin-left: 12px; }
 @media (max-width: 900px) {
-  .intro-grid, .two-col, .hub-grid { grid-template-columns: 1fr; }
+  .intro-grid, .two-col, .hub-grid, .scope-note { grid-template-columns: 1fr; }
   .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .reading-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pipeline-grid, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
