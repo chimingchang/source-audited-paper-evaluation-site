@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Correction Protocol - Source-Audited Paper Evaluation</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Source-Audited Paper Evaluation</a>
+    <nav><a class="active" href="about.html">About</a><a href="index.html">Results</a><a href="compare.html">Compare</a><a href="audits.html">Audits</a><a href="methodology.html">Methodology</a></nav>
+  </div>
+</header>
+
+<main class="wrap correction-page">
+<p class="eyebrow">Correction protocol</p>
+<h1>Challenge A Score With Evidence</h1>
+<p class="lead">A correction is strongest when it identifies a specific paper, claim, public source, and proposed scoring effect. The goal is to make disagreement auditable enough to enter source audit, claim-fate review, or the next versioned release.</p>
+<nav class="page-nav" aria-label="On this page">
+<span>On this page</span>
+<div>
+<a href="#submission-checklist">Submission checklist</a>
+<a href="#objection-types">Objection types</a>
+<a href="#correction-lifecycle">Lifecycle</a>
+<a href="#evidence-boundaries">Evidence boundaries</a>
+</div></nav>
+<section class="metrics">
+<div class="metric"><span>Ranking id</span><strong>2026-05-30-v0.4.18-public-ranking</strong></div>
+<div class="metric"><span>Current rows</span><strong>44</strong></div>
+<div class="metric"><span>Claim-level reports</span><strong>17</strong></div>
+<div class="metric"><span>Release checks</span><strong>73</strong></div>
+<div class="metric"><span>Public evidence</span><strong>required</strong></div>
+<div class="metric"><span>Release mode</span><strong>versioned</strong></div>
+</section>
+<section class="section" id="submission-checklist">
+  <div class="section-head"><p class="eyebrow">Submission checklist</p><h2>What A Useful Challenge Should Include</h2></div>
+  <div class="formula-grid">
+    <article class="formula-box"><h3>Paper and claim</h3><p>Name the paper id, affected claim, and whether the issue concerns paper-level scoring or a registered claim split.</p></article>
+    <article class="formula-box"><h3>Public source</h3><p>Provide an arXiv id, paper title, theorem, section, figure, no-go result, review, or other checkable public source.</p></article>
+    <article class="formula-box"><h3>Proposed effect</h3><p>State whether the evidence should change score, maturity, cap, claim fate, uncertainty band, source miss risk, or audit tags.</p></article>
+    <article class="formula-box"><h3>Boundary status</h3><p>Flag whether the issue touches withheld-signal rows. Withheld provenance can motivate an audit, but visible public evidence must carry the public correction.</p></article>
+  </div>
+</section>
+
+<section class="section" id="objection-types">
+<div class="section-head"><p class="eyebrow">Objection types</p><h2>Map The Challenge To A Scoring Surface</h2></div>
+<div class="table-wrap method-table"><table><thead><tr><th>Challenge</th><th>Evidence needed</th><th>Possible effect</th></tr></thead><tbody>
+<tr><td><strong>Missed predecessor</strong></td><td>Earlier equivalent or stronger source; explain the overlap and what was already known.</td><td>Source audit, predecessor control, originality score, uncertainty.</td></tr>
+<tr><td><strong>Validation or invalidation evidence</strong></td><td>Later result that confirms, weakens, falsifies, or sharply narrows a score-bearing claim.</td><td>Retrospective validity, maturity, claim fate, cap.</td></tr>
+<tr><td><strong>Missing claim split</strong></td><td>A paper-level score hides separable claims with different later outcomes or different technical roles.</td><td>Claim-level report, claim weights, final score.</td></tr>
+<tr><td><strong>Cap or maturity objection</strong></td><td>Evidence that a central claim is more/less invalidated, active, immature, or mature than the current report says.</td><td>Invalidation cap, maturity gate, uncertainty band.</td></tr>
+<tr><td><strong>Source completeness issue</strong></td><td>Missing evidence pack item, incomplete source set, high miss risk, or weak audit trail.</td><td>Source sufficiency, audit tags, publication readiness.</td></tr>
+<tr><td><strong>Rank-neighbor objection</strong></td><td>Two adjacent rows appear ordered too precisely despite small gaps or overlapping uncertainty bands.</td><td>Robustness note, uncertainty band, local ordering guardrail.</td></tr>
+</tbody></table></div></section>
+<section class="section" id="correction-lifecycle"><div class="section-head"><p class="eyebrow">Lifecycle</p><h2>How Corrections Become Ranking Changes</h2></div>
+<div class="pipeline-grid correction-pipeline">
+<article class="pipeline-step"><span>1</span><h3>Evidence intake</h3><p>Record the affected paper, claim, public source, and proposed scoring surface.</p></article>
+<article class="pipeline-step"><span>2</span><h3>Audit update</h3><p>Update source audit, evidence pack, claim-fate note, or robustness audit before changing rank.</p></article>
+<article class="pipeline-step"><span>3</span><h3>Scoring rerun</h3><p>Regenerate scoring reports only after the audit layer explains the correction.</p></article>
+<article class="pipeline-step"><span>4</span><h3>Versioned release</h3><p>Ranking changes enter the next candidate or frozen release, not by silent in-place edits.</p></article>
+<article class="pipeline-step"><span>5</span><h3>Public gate</h3><p>The redacted public site is rebuilt and deployed only after the publication-readiness gate passes.</p></article>
+</div></section>
+    <section class="section two-col" id="evidence-boundaries">
+      <article>
+        <div class="section-head"><p class="eyebrow">Evidence boundaries</p><h2>What Does Not Count By Itself</h2></div>
+        <ul class="compact-list about-list">
+          <li><strong>Authority signals.</strong> Author status, institution, venue, or reputation cannot replace source-audited evidence.</li>
+          <li><strong>Citation momentum.</strong> Citation count may identify a trail to inspect, but it is not itself a score argument.</li>
+          <li><strong>Unscoped disagreement.</strong> A challenge should name the affected claim or scoring surface, not only a global preference.</li>
+          <li><strong>Withheld provenance.</strong> Withheld calibration details are not public evidence. They can explain why a public row has an audit tag, but public score changes must be justified by visible sources or versioned audit fields.</li>
+        </ul>
+      </article>
+      <article>
+        <div class="section-head"><p class="eyebrow">Best correction format</p><h2>Minimum Useful Record</h2></div>
+        <div class="formula-box formula-wide"><pre><code>paper_id:
+claim_or_surface:
+public_source:
+evidence_type:
+proposed_effect:
+reasoning:
+version_checked:</code></pre></div>
+      </article>
+    </section>
+
+<section class="section link-panel" aria-label="Related links">
+<h2>Correction paths</h2>
+<div class="link-groups">
+<div class="link-group">
+<h3>Correction context</h3>
+<div class="link-list">
+<a class="secondary-link" href="index.html#ranking">Results table</a>
+<a href="compare.html">Rank neighbor comparison</a>
+<a href="about.html">About and scope</a>
+<a href="methodology.html">Methodology</a>
+</div></div>
+<div class="link-group">
+<h3>Audit surfaces</h3>
+<div class="link-list">
+<a href="audits/source-audits.html">Source audits</a>
+<a href="audits/score-uncertainty.html">Score uncertainty</a>
+<a href="audits/ranking-robustness.html">Ranking robustness</a>
+<a href="audits/claim-fate-registry.html">Claim fate registry</a>
+</div></div>
+</div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Generated 2026-05-31. Source artifacts are versioned in the repository.
+  </div>
+</footer>
+
+</body>
+</html>
