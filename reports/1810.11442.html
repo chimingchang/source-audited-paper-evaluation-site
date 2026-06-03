@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1810.11442 Scoring Report View - Source-Audited Paper Evaluation</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../index.html">Source-Audited Paper Evaluation</a>
+    <nav><a href="../about.html">About</a><a class="active" href="../index.html">Results</a><a href="../topics.html">Topics</a><a href="../compare.html">Compare</a><a href="../audits.html">Audits</a><a href="../methodology.html">Methodology</a></nav>
+  </div>
+</header>
+
+<main class="wrap detail report-detail">
+<p class="eyebrow"><a href="../papers/1810.11442.html">1810.11442</a> / Scoring report</p>
+<h1>Scoring Report View</h1>
+<p class="lead">Microscopic origin of the Bekenstein-Hawking entropy of supersymmetric AdS5 black holes</p>
+<section class="metrics">
+<div class="metric"><span>Final score</span><strong>91.5</strong></div>
+<div class="metric"><span>Ranking score</span><strong>91.5</strong></div>
+<div class="metric"><span>Formal final</span><strong>93.1</strong></div>
+<div class="metric"><span>Claim-level</span><strong>yes</strong></div>
+<div class="metric"><span>Maturity</span><strong>mature_validated</strong></div>
+<div class="metric"><span>Review confidence</span><strong>high_for_source_controls_medium_for_exact_point_score</strong></div>
+</section>
+<nav class="workspace-tabs" aria-label="Paper workspace">
+<a href="../papers/1810.11442.html">Summary</a>
+<a class="active" aria-current="page" href="../reports/1810.11442.html">Report</a>
+<a href="../source-audits/1810.11442.html">Source audit</a>
+<a href="../evidence-packs/1810.11442.html">Evidence pack</a>
+<a href="../compare.html#compare-11-12">Neighbor compare</a>
+</nav>
+
+<p class="notice canonical-notice">Generated scoring-report view. The raw scoring-report YAML is the canonical source for this evaluation.</p>
+<section class="section"><h2>Report Metadata</h2>
+<dl class="facts">
+<div><dt>Evaluation id</dt><dd>golden-ads5-2018-trio-v0.4.19-1810.11442</dd></div>
+<div><dt>Created</dt><dd>2026-06-03</dd></div>
+<div><dt>Schema</dt><dd>0.4-draft</dd></div>
+<div><dt>Rubric</dt><dd>hep-th-paper-evaluation-v0.3.3-draft</dd></div>
+<div><dt>Scoring gate</dt><dd>ads5_2018_trio_scoring_gate_v0.4.19</dd></div>
+<div><dt>Authors</dt><dd>Alejandro Cabo-Bizet, Davide Cassani, Dario Martelli, Sameer Murthy</dd></div>
+<div><dt>Submitted</dt><dd>2018-10-26</dd></div>
+<div><dt>Age band</dt><dd>5_to_10_years</dd></div>
+<div><dt>Rank</dt><dd>11</dd></div>
+</dl>
+<h3>Source audit gate</h3>
+<dl class="facts">
+<div><dt>Audit id</dt><dd>manual-source-audit-1810.11442-v0.4-2026-06-03</dd></div>
+<div><dt>Completeness</dt><dd>high</dd></div>
+<div><dt>Miss risk</dt><dd>low</dd></div>
+<div><dt>Gate recommendation</dt><dd>ready_for_scoring</dd></div>
+</dl>
+</section>
+<section class="section"><h2>Final Score</h2>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>ex_ante_intrinsic_score</code></td><td>93.1</td></tr>
+<tr><td><code>retrospective_validity_score</code></td><td>93</td></tr>
+<tr><td><code>effective_ex_ante_weight</code></td><td>0.5</td></tr>
+<tr><td><code>effective_retrospective_weight</code></td><td>0.5</td></tr>
+<tr><td><code>raw_originality_score</code></td><td>91.0</td></tr>
+<tr><td><code>originality_preserving_weight</code></td><td>0.35</td></tr>
+<tr><td><code>ex_ante_non_originality_score</code></td><td>94.2</td></tr>
+<tr><td><code>credit_preserving_base_score</code></td><td>92.7</td></tr>
+<tr><td><code>paper_level_validated_final_score</code></td><td>92.7</td></tr>
+<tr><td><code>validated_final_score</code></td><td>91.5</td></tr>
+<tr><td><code>ranking_score</code></td><td>91.5</td></tr>
+<tr><td><code>historical_lineage_score</code></td><td>91.5</td></tr>
+<tr><td><code>formal_final_score</code></td><td>93.1</td></tr>
+<tr><td><code>direction_risk_adjusted_score</code></td><td>n/a</td></tr>
+</tbody></table></div>
+<h3>Invalidation cap</h3>
+<dl class="facts">
+<div><dt>Applied</dt><dd>false</dd></div>
+<div><dt>Category</dt><dd>none</dd></div>
+<div><dt>Rationale</dt><dd>No mature invalidation cap applied.</dd></div>
+</dl>
+<h3>Formulas</h3>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>formula</code></td><td>0.50 * 93.1 + 0.50 * 93</td></tr>
+<tr><td><code>credit_preserving_formula</code></td><td>0.35 * raw_originality(91.0) + 0.65 * (0.50 * ex_ante_non_originality(94.2) + 0.50 * retrospective(93))</td></tr>
+<tr><td><code>paper_level_validated_final_formula</code></td><td>credit_preserving_base_score</td></tr>
+<tr><td><code>validated_final_formula</code></td><td>sum(claim.paper_weight * claim.validated_claim_score)</td></tr>
+</tbody></table></div>
+</section>
+<section class="section"><h2>Ex Ante Dimension Scores</h2>
+<dl class="facts">
+<div><dt>Ex ante intrinsic score</dt><dd>93.1</dd></div>
+</dl>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>originality_and_literature_increment</code></td><td>4.55</td></tr>
+<tr><td><code>problem_importance_and_upside</code></td><td>4.85</td></tr>
+<tr><td><code>technical_soundness_and_claim_support</code></td><td>4.65</td></tr>
+<tr><td><code>literature_positioning_and_fairness</code></td><td>4.45</td></tr>
+<tr><td><code>problem_framing_and_scope_fit</code></td><td>4.6</td></tr>
+<tr><td><code>presentation_and_checkability</code></td><td>4.25</td></tr>
+</tbody></table></div>
+</section>
+<section class="section"><h2>Predecessor Delta Audit</h2>
+<dl class="facts">
+<div><dt>Delta type</dt><dd>nontrivial_new_bridge_or_method</dd></div>
+<div><dt>Originality cap applied</dt><dd>true</dd></div>
+<div><dt>Cap value</dt><dd>4.8</dd></div>
+<div><dt>Delta claim</dt><dd>Holographic BPS-limit/on-shell-action and SCFT partition-function route to the AdS5 BPS entropy match, allocated as one near-peer 2018 companion rather than sole origin.</dd></div>
+</dl>
+<h3>Non-originality signals</h3>
+<ul class="compact-list">
+<li>AdS5 BPS black-hole solution credit belongs to earlier gravity-side solution papers.</li>
+<li>4d superconformal-index credit belongs to the 2005 index papers.</li>
+<li>Entropy-function/extremization bridge credit is controlled by 1705.05383.</li>
+<li>1810.12067 and 1812.09613 share the 2018 entropy-resolution cluster.</li>
+</ul>
+<h3>Novelty signals</h3>
+<ul class="compact-list">
+<li>BPS limit of complexified supersymmetric AdS5 black-hole thermodynamics.</li>
+<li>Constrained Legendre transform of the on-shell gravitational action.</li>
+<li>SCFT partition function on twisted S1 x S3 and generalized supersymmetric Casimir energy route.</li>
+<li>Large-N field-theory/holographic construction reproducing the AdS5 Bekenstein-Hawking entropy.</li>
+</ul>
+<h3>Scoring invariants</h3>
+<ul class="compact-list">
+<li>Keep the 2018 companion-credit boundary explicit.</li>
+<li>Do not count index-root, gravity-solution, or entropy-extremization bridge credit as target-original.</li>
+</ul>
+</section>
+<section class="section"><h2>Retrospective Validation</h2>
+<dl class="facts">
+<div><dt>Validity status</dt><dd>mature_positive_companion_sensitive</dd></div>
+<div><dt>Validity score</dt><dd>93</dd></div>
+<div><dt>Age formula</dt><dd>0.50 * ex_ante_intrinsic_score + 0.50 * retrospective_validity_score</dd></div>
+</dl>
+<h3>Retrospective evidence</h3>
+<ul class="compact-list">
+<li>Source inspection confirms the gravity-side and field-theory entropy derivation.</li>
+<li>Citation/cocitation data show durable uptake in the AdS5 entropy-resolution cluster.</li>
+<li>Retrospective credit is companion-sensitive and should not be counted as sole discovery.</li>
+</ul>
+<h3>Maturity gate</h3>
+<dl class="facts">
+<div><dt>Status</dt><dd>mature_validated</dd></div>
+<div><dt>Rationale</dt><dd>Mature positive for the source-limited AdS5 entropy-route claim, with companion-credit allocation still required.</dd></div>
+<div><dt>Age baseline retrospective weight</dt><dd>0.5</dd></div>
+<div><dt>Maturity gate max retrospective weight</dt><dd>0.7</dd></div>
+<div><dt>Effective retrospective weight</dt><dd>0.5</dd></div>
+</dl>
+</section>
+<section class="section"><h2>Claim-Level Scoring</h2>
+<dl class="facts">
+<div><dt>Mode</dt><dd>multi_claim_bundle</dd></div>
+<div><dt>Weight basis</dt><dd>ex_ante_structural</dd></div>
+<div><dt>Paper-level score without decomposition</dt><dd>92.7</dd></div>
+<div><dt>Paper claim-weighted score</dt><dd>91.5</dd></div>
+<div><dt>Historical lineage bonus</dt><dd>0.0</dd></div>
+<div><dt>Historical lineage score</dt><dd>91.5</dd></div>
+<div><dt>Formula</dt><dd>sum(claim.paper_weight * claim.validated_claim_score)</dd></div>
+</dl>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Claim</th><th>Role</th><th>Weight</th><th>Structural</th><th>Raw orig.</th><th>Ex ante non-orig.</th><th>Retro</th><th>Maturity</th><th>Cap</th><th>Score</th></tr></thead><tbody>
+<tr>
+<td><code>ads5_bps_limit_supersymmetric_quantum_statistical_relation</code><span class="paper-title">BPS-limit and supersymmetric quantum-statistical relation for AdS5 black holes</span></td>
+<td><span class="badge score_bearing">score bearing</span></td>
+<td>0.244</td>
+<td>4.47</td>
+<td>90</td>
+<td>93</td>
+<td>92</td>
+<td><span class="badge mature_validated">mature validated</span></td>
+<td>none</td>
+<td>91.6</td>
+</tr>
+<tr>
+<td><code>constrained_legendre_transform_of_on_shell_action</code><span class="paper-title">Constrained Legendre transform of the on-shell action</span></td>
+<td><span class="badge score_bearing">score bearing</span></td>
+<td>0.240</td>
+<td>4.4</td>
+<td>86</td>
+<td>92</td>
+<td>92</td>
+<td><span class="badge mature_validated">mature validated</span></td>
+<td>none</td>
+<td>89.9</td>
+</tr>
+<tr>
+<td><code>scft_localization_generalized_supersymmetric_casimir_energy</code><span class="paper-title">SCFT partition-function and generalized supersymmetric Casimir energy route</span></td>
+<td><span class="badge score_bearing">score bearing</span></td>
+<td>0.250</td>
+<td>4.59</td>
+<td>91</td>
+<td>93</td>
+<td>92</td>
+<td><span class="badge mature_validated">mature validated</span></td>
+<td>none</td>
+<td>92.0</td>
+</tr>
+<tr>
+<td><code>large_n_ads5_entropy_match</code><span class="paper-title">Large-N AdS5 BPS entropy match</span></td>
+<td><span class="badge score_bearing">score bearing</span></td>
+<td>0.267</td>
+<td>4.9</td>
+<td>88</td>
+<td>95</td>
+<td>94</td>
+<td><span class="badge mature_validated">mature validated</span></td>
+<td>none</td>
+<td>92.2</td>
+</tr>
+<tr>
+<td><code>near_companion_credit_boundary</code><span class="paper-title">Near-companion credit boundary</span></td>
+<td><span class="badge diagnostic_only">diagnostic only</span></td>
+<td>0.000</td>
+<td>3.2</td>
+<td>70</td>
+<td>85</td>
+<td>90</td>
+<td><span class="badge mature_validated">mature validated</span></td>
+<td>none</td>
+<td>81.4</td>
+</tr>
+<tr>
+<td><code>v3_index_asymptotics_scope_note</code><span class="paper-title">v3 index-asymptotics scope note</span></td>
+<td><span class="badge diagnostic_only">diagnostic only</span></td>
+<td>0.000</td>
+<td>2.45</td>
+<td>65</td>
+<td>82</td>
+<td>82</td>
+<td><span class="badge active_unresolved">active unresolved</span></td>
+<td>none</td>
+<td>76.1</td>
+</tr>
+</tbody></table></div>
+<div class="claim-card-grid">
+<article class="claim-card">
+<h3><code>ads5_bps_limit_supersymmetric_quantum_statistical_relation</code></h3>
+<p>BPS-limit and supersymmetric quantum-statistical relation for AdS5 black holes</p>
+<dl class="facts">
+<div><dt>Role</dt><dd>score_bearing</dd></div>
+<div><dt>Paper weight</dt><dd>0.2435</dd></div>
+<div><dt>Structural score</dt><dd>4.47</dd></div>
+<div><dt>Raw originality</dt><dd>90</dd></div>
+<div><dt>Ex ante non-originality</dt><dd>93</dd></div>
+<div><dt>Retrospective score</dt><dd>92</dd></div>
+<div><dt>Claim score</dt><dd>91.6</dd></div>
+<div><dt>Formula</dt><dd>0.35 * raw_originality(90) + 0.65 * (0.50 * ex_ante_non_originality(93) + 0.50 * retrospective(92))</dd></div>
+</dl>
+<h3>Maturity</h3>
+<dl class="facts">
+<div><dt>Status</dt><dd>mature_validated</dd></div>
+<div><dt>Rationale</dt><dd>Mature positive as a target-specific gravity-side route, with predecessor solution credit separated.</dd></div>
+<div><dt>Effective retrospective weight</dt><dd>0.5</dd></div>
+</dl>
+<h3>Cap</h3>
+<dl class="facts">
+<div><dt>Applied</dt><dd>false</dd></div>
+<div><dt>Category</dt><dd>none</dd></div>
+<div><dt>Rationale</dt><dd>No claim-level invalidation cap applied.</dd></div>
+</dl>
+<h3>Structural factors</h3>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>declared_centrality</code></td><td>4.5</td></tr>
+<tr><td><code>logical_load_bearing_role</code></td><td>4.5</td></tr>
+<tr><td><code>technical_mass</code></td><td>4.5</td></tr>
+<tr><td><code>field_facing_takeaway</code></td><td>4.3</td></tr>
+</tbody></table></div>
+</article>
+<article class="claim-card">
+<h3><code>constrained_legendre_transform_of_on_shell_action</code></h3>
+<p>Constrained Legendre transform of the on-shell action</p>
+<dl class="facts">
+<div><dt>Role</dt><dd>score_bearing</dd></div>
+<div><dt>Paper weight</dt><dd>0.2397</dd></div>
+<div><dt>Structural score</dt><dd>4.4</dd></div>
+<div><dt>Raw originality</dt><dd>86</dd></div>
+<div><dt>Ex ante non-originality</dt><dd>92</dd></div>
+<div><dt>Retrospective score</dt><dd>92</dd></div>
+<div><dt>Claim score</dt><dd>89.9</dd></div>
+<div><dt>Formula</dt><dd>0.35 * raw_originality(86) + 0.65 * (0.50 * ex_ante_non_originality(92) + 0.50 * retrospective(92))</dd></div>
+</dl>
+<h3>Maturity</h3>
+<dl class="facts">
+<div><dt>Status</dt><dd>mature_validated</dd></div>
+<div><dt>Rationale</dt><dd>Mature positive, but source credit to 1705.05383 remains a hard boundary.</dd></div>
+<div><dt>Effective retrospective weight</dt><dd>0.5</dd></div>
+</dl>
+<h3>Cap</h3>
+<dl class="facts">
+<div><dt>Applied</dt><dd>false</dd></div>
+<div><dt>Category</dt><dd>none</dd></div>
+<div><dt>Rationale</dt><dd>No claim-level invalidation cap applied.</dd></div>
+</dl>
+<h3>Structural factors</h3>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>declared_centrality</code></td><td>4.4</td></tr>
+<tr><td><code>logical_load_bearing_role</code></td><td>4.5</td></tr>
+<tr><td><code>technical_mass</code></td><td>4.4</td></tr>
+<tr><td><code>field_facing_takeaway</code></td><td>4.2</td></tr>
+</tbody></table></div>
+</article>
+<article class="claim-card">
+<h3><code>scft_localization_generalized_supersymmetric_casimir_energy</code></h3>
+<p>SCFT partition-function and generalized supersymmetric Casimir energy route</p>
+<dl class="facts">
+<div><dt>Role</dt><dd>score_bearing</dd></div>
+<div><dt>Paper weight</dt><dd>0.2498</dd></div>
+<div><dt>Structural score</dt><dd>4.59</dd></div>
+<div><dt>Raw originality</dt><dd>91</dd></div>
+<div><dt>Ex ante non-originality</dt><dd>93</dd></div>
+<div><dt>Retrospective score</dt><dd>92</dd></div>
+<div><dt>Claim score</dt><dd>92.0</dd></div>
+<div><dt>Formula</dt><dd>0.35 * raw_originality(91) + 0.65 * (0.50 * ex_ante_non_originality(93) + 0.50 * retrospective(92))</dd></div>
+</dl>
+<h3>Maturity</h3>
+<dl class="facts">
+<div><dt>Status</dt><dd>mature_validated</dd></div>
+<div><dt>Rationale</dt><dd>Mature positive field-theory/holographic route with v3 index-asymptotics scope awareness.</dd></div>
+<div><dt>Effective retrospective weight</dt><dd>0.5</dd></div>
+</dl>
+<h3>Cap</h3>
+<dl class="facts">
+<div><dt>Applied</dt><dd>false</dd></div>
+<div><dt>Category</dt><dd>none</dd></div>
+<div><dt>Rationale</dt><dd>No claim-level invalidation cap applied.</dd></div>
+</dl>
+<h3>Structural factors</h3>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>declared_centrality</code></td><td>4.7</td></tr>
+<tr><td><code>logical_load_bearing_role</code></td><td>4.6</td></tr>
+<tr><td><code>technical_mass</code></td><td>4.5</td></tr>
+<tr><td><code>field_facing_takeaway</code></td><td>4.4</td></tr>
+</tbody></table></div>
+</article>
+<article class="claim-card">
+<h3><code>large_n_ads5_entropy_match</code></h3>
+<p>Large-N AdS5 BPS entropy match</p>
+<dl class="facts">
+<div><dt>Role</dt><dd>score_bearing</dd></div>
+<div><dt>Paper weight</dt><dd>0.267</dd></div>
+<div><dt>Structural score</dt><dd>4.9</dd></div>
+<div><dt>Raw originality</dt><dd>88</dd></div>
+<div><dt>Ex ante non-originality</dt><dd>95</dd></div>
+<div><dt>Retrospective score</dt><dd>94</dd></div>
+<div><dt>Claim score</dt><dd>92.2</dd></div>
+<div><dt>Formula</dt><dd>0.35 * raw_originality(88) + 0.65 * (0.50 * ex_ante_non_originality(95) + 0.50 * retrospective(94))</dd></div>
+</dl>
+<h3>Maturity</h3>
+<dl class="facts">
+<div><dt>Status</dt><dd>mature_validated</dd></div>
+<div><dt>Rationale</dt><dd>Mature positive entropy match, with credit shared across the 2018 companion cluster.</dd></div>
+<div><dt>Effective retrospective weight</dt><dd>0.5</dd></div>
+</dl>
+<h3>Cap</h3>
+<dl class="facts">
+<div><dt>Applied</dt><dd>false</dd></div>
+<div><dt>Category</dt><dd>none</dd></div>
+<div><dt>Rationale</dt><dd>No claim-level invalidation cap applied.</dd></div>
+</dl>
+<h3>Structural factors</h3>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>declared_centrality</code></td><td>5</td></tr>
+<tr><td><code>logical_load_bearing_role</code></td><td>5</td></tr>
+<tr><td><code>technical_mass</code></td><td>4.5</td></tr>
+<tr><td><code>field_facing_takeaway</code></td><td>5</td></tr>
+</tbody></table></div>
+</article>
+<article class="claim-card">
+<h3><code>near_companion_credit_boundary</code></h3>
+<p>Near-companion credit boundary</p>
+<dl class="facts">
+<div><dt>Role</dt><dd>diagnostic_only</dd></div>
+<div><dt>Paper weight</dt><dd>0.0</dd></div>
+<div><dt>Structural score</dt><dd>3.2</dd></div>
+<div><dt>Raw originality</dt><dd>70</dd></div>
+<div><dt>Ex ante non-originality</dt><dd>85</dd></div>
+<div><dt>Retrospective score</dt><dd>90</dd></div>
+<div><dt>Claim score</dt><dd>81.4</dd></div>
+<div><dt>Formula</dt><dd>0.35 * raw_originality(70) + 0.65 * (0.50 * ex_ante_non_originality(85) + 0.50 * retrospective(90))</dd></div>
+</dl>
+<h3>Maturity</h3>
+<dl class="facts">
+<div><dt>Status</dt><dd>mature_validated</dd></div>
+<div><dt>Rationale</dt><dd>Diagnostic source-credit boundary, not a score-bearing scientific claim.</dd></div>
+<div><dt>Effective retrospective weight</dt><dd>0.5</dd></div>
+</dl>
+<h3>Cap</h3>
+<dl class="facts">
+<div><dt>Applied</dt><dd>false</dd></div>
+<div><dt>Category</dt><dd>none</dd></div>
+<div><dt>Rationale</dt><dd>No claim-level invalidation cap applied.</dd></div>
+</dl>
+<h3>Structural factors</h3>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>declared_centrality</code></td><td>2</td></tr>
+<tr><td><code>logical_load_bearing_role</code></td><td>5</td></tr>
+<tr><td><code>technical_mass</code></td><td>2</td></tr>
+<tr><td><code>field_facing_takeaway</code></td><td>4</td></tr>
+</tbody></table></div>
+</article>
+<article class="claim-card">
+<h3><code>v3_index_asymptotics_scope_note</code></h3>
+<p>v3 index-asymptotics scope note</p>
+<dl class="facts">
+<div><dt>Role</dt><dd>diagnostic_only</dd></div>
+<div><dt>Paper weight</dt><dd>0.0</dd></div>
+<div><dt>Structural score</dt><dd>2.45</dd></div>
+<div><dt>Raw originality</dt><dd>65</dd></div>
+<div><dt>Ex ante non-originality</dt><dd>82</dd></div>
+<div><dt>Retrospective score</dt><dd>82</dd></div>
+<div><dt>Claim score</dt><dd>76.1</dd></div>
+<div><dt>Formula</dt><dd>0.35 * raw_originality(65) + 0.65 * (0.50 * ex_ante_non_originality(82) + 0.50 * retrospective(82))</dd></div>
+</dl>
+<h3>Maturity</h3>
+<dl class="facts">
+<div><dt>Status</dt><dd>active_unresolved</dd></div>
+<div><dt>Rationale</dt><dd>Scope-control note only; it should not dilute the score-bearing core.</dd></div>
+<div><dt>Effective retrospective weight</dt><dd>0.5</dd></div>
+</dl>
+<h3>Cap</h3>
+<dl class="facts">
+<div><dt>Applied</dt><dd>false</dd></div>
+<div><dt>Category</dt><dd>none</dd></div>
+<div><dt>Rationale</dt><dd>No claim-level invalidation cap applied.</dd></div>
+</dl>
+<h3>Structural factors</h3>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Field</th><th>Value</th></tr></thead><tbody>
+<tr><td><code>declared_centrality</code></td><td>2</td></tr>
+<tr><td><code>logical_load_bearing_role</code></td><td>3</td></tr>
+<tr><td><code>technical_mass</code></td><td>2</td></tr>
+<tr><td><code>field_facing_takeaway</code></td><td>3</td></tr>
+</tbody></table></div>
+</article>
+</div>
+</section>
+<section class="section"><h2>Evidence Summary</h2>
+<p class="notice">Calibration details are withheld from this public profile.</p>
+<h3>Closest predecessors</h3>
+<div class="table-wrap report-table"><table>
+<thead><tr><th>Source</th><th>Title</th><th>Role</th></tr></thead><tbody>
+<tr><td><code>hep-th/0401042</code></td><td>Supersymmetric AdS5 black holes</td><td>Gravity-side AdS5 BPS black-hole solution anchor; not target-original counting credit.</td></tr>
+<tr><td><code>hep-th/0510251</code></td><td>An Index for 4 dimensional Super Conformal Theories</td><td>4d superconformal-index root; not target-original entropy-resolution credit.</td></tr>
+<tr><td><code>1705.05383</code></td><td>Entropy extremization for rotating BPS AdS5 black holes</td><td>Entropy-function/extremization bridge that controls source credit.</td></tr>
+<tr><td><code>1810.12067</code></td><td>Large AdS black holes from QFT</td><td>2018 generalized-Cardy/QFT near companion.</td></tr>
+<tr><td><code>1812.09613</code></td><td>Black Holes in 4D N=4 Super-Yang-Mills Field Theory</td><td>2018 Bethe-Ansatz/large-N index near companion.</td></tr>
+</tbody></table></div>
+<div class="two-col report-lists">
+<div>
+<h3>Positive follow-up evidence</h3>
+<ul class="compact-list">
+<li>INSPIRE and co-citation evidence support durable uptake as a 2018 AdS5 entropy-resolution companion.</li>
+<li>Later Cardy, index-asymptotics, localization, and finite-N/cohomology work cite the 2018 cluster as an anchor.</li>
+<li>The target&#39;s gravity-side BPS limit and SCFT partition-function route remain a distinctive route inside the trio.</li>
+</ul>
+<h3>Negative or limiting evidence</h3>
+<ul class="compact-list">
+<li>Do not score as gravity-side black-hole solution discovery.</li>
+<li>Do not score as 4d superconformal-index origin.</li>
+<li>Do not score as sole 2018 entropy-resolution paper.</li>
+<li>The v3 index-asymptotics note is a scope-control trigger, not an invalidation.</li>
+</ul>
+</div><div>
+<h3>Sociological risk evidence</h3>
+<ul class="compact-list">
+<li>High-citation 2018 cluster and strong companion co-citation can inflate sole-discovery credit unless the trio gate is explicit.</li>
+</ul>
+</div></div>
+</section>
+<section class="section"><h2>Review Report</h2>
+<p>1810.11442 is a mature validated near-peer 2018 AdS5 entropy-resolution companion, with score-bearing credit for the BPS-limit/on-shell-action and SCFT partition-function route while source controls keep gravity-solution, index-root, entropy-extremization, and companion credit separate.</p>
+<dl class="facts">
+<div><dt>Confidence</dt><dd>high_for_source_controls_medium_for_exact_point_score</dd></div>
+</dl>
+<div class="two-col report-lists">
+<div>
+<h3>Strengths</h3>
+<ul class="compact-list">
+<li>Mature two-route entropy derivation with strong source-audited support.</li>
+<li>Distinctive BPS-limit/on-shell-action and SCFT partition-function content inside the trio.</li>
+<li>Durable uptake in AdS5 black-hole entropy literature.</li>
+</ul>
+<h3>Weaknesses / scope controls</h3>
+<ul class="compact-list">
+<li>Shares the 2018 entropy-resolution core with 1810.12067 and 1812.09613.</li>
+<li>Does not originate AdS5 black-hole solutions, the 4d index, or entropy extremization.</li>
+<li>v3 index-asymptotics note requires scope-aware reporting.</li>
+</ul>
+</div><div>
+<h3>Public ranking invariants</h3>
+<ul class="compact-list">
+<li>Keep 1810.11442 as one near-peer 2018 AdS5 entropy-resolution companion, not the sole first resolution.</li>
+<li>Do not import AdS5 gravity-solution, 4d index-root, entropy-extremization, or finite-N/cohomology credit into target originality.</li>
+<li>Treat the v3 large-N index-asymptotics note as a scope-control trigger, not a target invalidation.</li>
+<li>Keep 1810.12067 and 1812.09613 companion claims visible in report-level calibration.</li>
+</ul>
+<h3>Required checks before public ranking</h3>
+<p class="muted">None recorded.</p>
+</div></div>
+</section>
+<section class="section"><h2>Limitations</h2>
+<ul class="compact-list">
+<li>Generated from scoring input evaluations/scoring-inputs/golden/2026-06-03-v0.4.19-ads5-2018-trio-ready.yaml; subjective judgments are supplied by that input.</li>
+</ul>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    Generated 2026-06-03. Source artifacts are versioned in the repository.
+  </div>
+</footer>
+
+</body>
+</html>
