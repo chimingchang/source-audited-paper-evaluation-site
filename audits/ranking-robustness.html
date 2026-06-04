@@ -19,11 +19,11 @@
 <p class="eyebrow"><a href="../audits.html">Audits</a> / Ranking Robustness</p>
 <h1>Ranking Robustness</h1>
 <section class="metrics">
-<div class="metric"><span>Ranked papers</span><strong>50</strong></div>
-<div class="metric"><span>Adjacent gaps &lt;= 0.5</span><strong>27</strong></div>
-<div class="metric"><span>Adjacent gaps &lt;= 1.0</span><strong>37</strong></div>
-<div class="metric"><span>Adjacent gaps &lt;= 2.0</span><strong>42</strong></div>
-<div class="metric"><span>Adjacent interval overlaps under local perturbation</span><strong>27</strong></div>
+<div class="metric"><span>Ranked papers</span><strong>53</strong></div>
+<div class="metric"><span>Adjacent gaps &lt;= 0.5</span><strong>30</strong></div>
+<div class="metric"><span>Adjacent gaps &lt;= 1.0</span><strong>40</strong></div>
+<div class="metric"><span>Adjacent gaps &lt;= 2.0</span><strong>45</strong></div>
+<div class="metric"><span>Adjacent interval overlaps under local perturbation</span><strong>29</strong></div>
 <div class="metric"><span>Rows with sensitivity radius &gt;= 1.0</span><strong>10</strong></div>
 </section>
 
@@ -31,9 +31,9 @@
 <section class="section markdown-section">
 <p>Created: 2026-06-04</p>
 <p>Status: diagnostic pass; no ranking scores changed.</p>
-<p>Ranking: <code>2026-06-04-v0.4.20-public-ranking</code></p>
-<p>Source file: <code>evaluations/rankings/2026-06-04-v0.4.20-public-ranking.yaml</code></p>
-<p>This audit checks how much of the public ordering is point-estimate robust versus locally sensitive. It applies two small deterministic perturbations to the frozen v0.4.20 reports:</p>
+<p>Ranking: <code>2026-06-04-v0.4.21-public-ranking</code></p>
+<p>Source file: <code>evaluations/rankings/2026-06-04-v0.4.21-public-ranking.yaml</code></p>
+<p>This audit checks how much of the public ordering is point-estimate robust versus locally sensitive. It applies two small deterministic perturbations to the frozen v0.4.21 reports:</p>
 <ul class="compact-list">
 <li>retrospective-weight shift: <code>+/-0.10</code> within each report or claim maturity gate;</li>
 <li>claim-weight transfer: up to <code>10%</code> total score-bearing claim weight from the strongest claim to the weakest, and conversely.</li>
@@ -44,11 +44,11 @@
 <div class="table-wrap audit-table"><table>
 <thead><tr><th>Metric</th><th>Value</th></tr></thead>
 <tbody>
-<tr><td>Ranked papers</td><td>50</td></tr>
-<tr><td>Adjacent gaps &lt;= 0.5</td><td>27</td></tr>
-<tr><td>Adjacent gaps &lt;= 1.0</td><td>37</td></tr>
-<tr><td>Adjacent gaps &lt;= 2.0</td><td>42</td></tr>
-<tr><td>Adjacent interval overlaps under local perturbation</td><td>27</td></tr>
+<tr><td>Ranked papers</td><td>53</td></tr>
+<tr><td>Adjacent gaps &lt;= 0.5</td><td>30</td></tr>
+<tr><td>Adjacent gaps &lt;= 1.0</td><td>40</td></tr>
+<tr><td>Adjacent gaps &lt;= 2.0</td><td>45</td></tr>
+<tr><td>Adjacent interval overlaps under local perturbation</td><td>29</td></tr>
 <tr><td>Rows with sensitivity radius &gt;= 1.0</td><td>10</td></tr>
 <tr><td>Cap-bound rows</td><td>3</td></tr>
 </tbody></table></div>
@@ -65,10 +65,13 @@
 <tr><td><a href="../papers/1905.08255.html"><code>1905.08255</code></a> 95.5</td><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a> 95.1</td><td>0.4</td><td>yes</td><td>near tie; avoid strong row-order interpretation</td></tr>
 <tr><td><a href="../papers/1905.08762.html"><code>1905.08762</code></a> 95.1</td><td><a href="../papers/hep-th_0105097.html"><code>hep-th/0105097</code></a> 93.5</td><td>1.6</td><td>no</td><td>watch-list gap</td></tr>
 <tr><td><a href="../papers/hep-th_0105097.html"><code>hep-th/0105097</code></a> 93.5</td><td><a href="../papers/hep-th_9802109.html"><code>hep-th/9802109</code></a> 92.6</td><td>0.9</td><td>no</td><td>locally close; row order may be sensitive to small scoring changes</td></tr>
-<tr><td><a href="../papers/hep-th_9802109.html"><code>hep-th/9802109</code></a> 92.6</td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a> 91.6</td><td>1.0</td><td>no</td><td>locally close; row order may be sensitive to small scoring changes</td></tr>
+<tr><td><a href="../papers/hep-th_9802109.html"><code>hep-th/9802109</code></a> 92.6</td><td><a href="../papers/0705.0016.html"><code>0705.0016</code></a> 92.0</td><td>0.6</td><td>no</td><td>locally close; row order may be sensitive to small scoring changes</td></tr>
+<tr><td><a href="../papers/0705.0016.html"><code>0705.0016</code></a> 92.0</td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a> 91.6</td><td>0.4</td><td>yes</td><td>near tie; avoid strong row-order interpretation</td></tr>
 <tr><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a> 91.6</td><td><a href="../papers/1810.11442.html"><code>1810.11442</code></a> 91.5</td><td>0.1</td><td>yes</td><td>near tie; avoid strong row-order interpretation</td></tr>
-<tr><td><a href="../papers/1810.11442.html"><code>1810.11442</code></a> 91.5</td><td><a href="../papers/1812.09613.html"><code>1812.09613</code></a> 91.3</td><td>0.2</td><td>yes</td><td>near tie; avoid strong row-order interpretation</td></tr>
-<tr><td><a href="../papers/1812.09613.html"><code>1812.09613</code></a> 91.3</td><td><a href="../papers/1511.04085.html"><code>1511.04085</code></a> 91.1</td><td>0.2</td><td>yes</td><td>near tie; avoid strong row-order interpretation</td></tr>
+<tr><td><a href="../papers/1810.11442.html"><code>1810.11442</code></a> 91.5</td><td><a href="../papers/1304.4926.html"><code>1304.4926</code></a> 91.4</td><td>0.1</td><td>yes</td><td>near tie; avoid strong row-order interpretation</td></tr>
+<tr><td><a href="../papers/1304.4926.html"><code>1304.4926</code></a> 91.4</td><td><a href="../papers/1812.09613.html"><code>1812.09613</code></a> 91.3</td><td>0.1</td><td>yes</td><td>near tie; avoid strong row-order interpretation</td></tr>
+<tr><td><a href="../papers/1812.09613.html"><code>1812.09613</code></a> 91.3</td><td><a href="../papers/1307.2892.html"><code>1307.2892</code></a> 91.1</td><td>0.2</td><td>no</td><td>near tie; avoid strong row-order interpretation</td></tr>
+<tr><td><a href="../papers/1307.2892.html"><code>1307.2892</code></a> 91.1</td><td><a href="../papers/1511.04085.html"><code>1511.04085</code></a> 91.1</td><td>0.0</td><td>yes</td><td>near tie; avoid strong row-order interpretation</td></tr>
 <tr><td><a href="../papers/1511.04085.html"><code>1511.04085</code></a> 91.1</td><td><a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a> 90.9</td><td>0.2</td><td>no</td><td>near tie; avoid strong row-order interpretation</td></tr>
 <tr><td><a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a> 90.9</td><td><a href="../papers/hep-th_0510251.html"><code>hep-th/0510251</code></a> 90.8</td><td>0.1</td><td>no</td><td>near tie; avoid strong row-order interpretation</td></tr>
 <tr><td><a href="../papers/hep-th_0510251.html"><code>hep-th/0510251</code></a> 90.8</td><td><a href="../papers/hep-th_0210114.html"><code>hep-th/0210114</code></a> 90.6</td><td>0.2</td><td>no</td><td>near tie; avoid strong row-order interpretation</td></tr>
@@ -107,30 +110,30 @@
 <div class="table-wrap audit-table"><table>
 <thead><tr><th>Rank</th><th>Paper</th><th>Score</th><th>Local band</th><th>Radius</th><th>Rank interval</th><th>Main driver</th></tr></thead>
 <tbody>
-<tr><td>48</td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td>65.1</td><td>62.6-67.6</td><td>2.5</td><td>47-48</td><td>claim weights, cap-bound, mature_invalidated</td></tr>
-<tr><td>24</td><td><a href="../papers/1004.0956.html"><code>1004.0956</code></a></td><td>87.8</td><td>85.5-90.1</td><td>2.3</td><td>17-32</td><td>claim weights, active_unresolved</td></tr>
-<tr><td>47</td><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td>67.3</td><td>65.0-69.6</td><td>2.3</td><td>47-48</td><td>claim weights, cap-bound, mature_invalidated</td></tr>
-<tr><td>40</td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td>78.6</td><td>76.9-80.3</td><td>1.7</td><td>39-41</td><td>claim weights, active_unresolved</td></tr>
-<tr><td>49</td><td><a href="../papers/2312.07820.html"><code>2312.07820</code></a></td><td>57.7</td><td>57.7-59.3</td><td>1.6</td><td>49-49</td><td>immature</td></tr>
-<tr><td>39</td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td>79.6</td><td>78.1-81.1</td><td>1.5</td><td>39-40</td><td>claim weights, active_unresolved</td></tr>
-<tr><td>22</td><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td>88.2</td><td>86.8-89.6</td><td>1.4</td><td>17-29</td><td>claim weights, active_unresolved</td></tr>
-<tr><td>35</td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td>82.5</td><td>81.2-83.9</td><td>1.4</td><td>33-38</td><td>claim weights, active_unresolved</td></tr>
-<tr><td>33</td><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td>83.8</td><td>82.6-85.0</td><td>1.2</td><td>32-37</td><td>claim weights, active_unresolved</td></tr>
-<tr><td>43</td><td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td><td>73.3</td><td>72.4-74.3</td><td>1.0</td><td>43-45</td><td>claim weights</td></tr>
-<tr><td>34</td><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td>83.0</td><td>82.2-83.8</td><td>0.8</td><td>33-37</td><td>claim weights, immature</td></tr>
-<tr><td>37</td><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td>81.9</td><td>81.2-82.6</td><td>0.7</td><td>33-38</td><td>claim weights, active_unresolved</td></tr>
-<tr><td>10</td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td>91.6</td><td>91.0-92.2</td><td>0.6</td><td>10-13</td><td>claim weights, active_unresolved</td></tr>
-<tr><td>45</td><td><a href="../papers/0906.0591.html"><code>0906.0591</code></a></td><td>71.9</td><td>71.9-72.5</td><td>0.6</td><td>43-45</td><td>retro-weight screen</td></tr>
-<tr><td>32</td><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td>85.1</td><td>84.6-85.6</td><td>0.5</td><td>31-33</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>51</td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td>65.1</td><td>62.6-67.6</td><td>2.5</td><td>50-51</td><td>claim weights, cap-bound, mature_invalidated</td></tr>
+<tr><td>27</td><td><a href="../papers/1004.0956.html"><code>1004.0956</code></a></td><td>87.8</td><td>85.5-90.1</td><td>2.3</td><td>20-35</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>50</td><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td>67.3</td><td>65.0-69.6</td><td>2.3</td><td>50-51</td><td>claim weights, cap-bound, mature_invalidated</td></tr>
+<tr><td>43</td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td>78.6</td><td>76.9-80.3</td><td>1.7</td><td>42-44</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>52</td><td><a href="../papers/2312.07820.html"><code>2312.07820</code></a></td><td>57.7</td><td>57.7-59.3</td><td>1.6</td><td>52-52</td><td>immature</td></tr>
+<tr><td>42</td><td><a href="../papers/1306.0533.html"><code>1306.0533</code></a></td><td>79.6</td><td>78.1-81.1</td><td>1.5</td><td>42-43</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>25</td><td><a href="../papers/hep-th_0312171.html"><code>hep-th/0312171</code></a></td><td>88.2</td><td>86.8-89.6</td><td>1.4</td><td>20-32</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>38</td><td><a href="../papers/hep-th_0301240.html"><code>hep-th/0301240</code></a></td><td>82.5</td><td>81.2-83.9</td><td>1.4</td><td>36-41</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>36</td><td><a href="../papers/hep-th_0502058.html"><code>hep-th/0502058</code></a></td><td>83.8</td><td>82.6-85.0</td><td>1.2</td><td>35-40</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>46</td><td><a href="../papers/1604.07818.html"><code>1604.07818</code></a></td><td>73.3</td><td>72.4-74.3</td><td>1.0</td><td>46-48</td><td>claim weights</td></tr>
+<tr><td>37</td><td><a href="../papers/2402.10129.html"><code>2402.10129</code></a></td><td>83.0</td><td>82.2-83.8</td><td>0.8</td><td>36-40</td><td>claim weights, immature</td></tr>
+<tr><td>40</td><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td>81.9</td><td>81.2-82.6</td><td>0.7</td><td>36-41</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>11</td><td><a href="../papers/hep-th_9610043.html"><code>hep-th/9610043</code></a></td><td>91.6</td><td>91.0-92.2</td><td>0.6</td><td>10-16</td><td>claim weights, active_unresolved</td></tr>
+<tr><td>48</td><td><a href="../papers/0906.0591.html"><code>0906.0591</code></a></td><td>71.9</td><td>71.9-72.5</td><td>0.6</td><td>46-48</td><td>retro-weight screen</td></tr>
+<tr><td>35</td><td><a href="../papers/hep-th_0205131.html"><code>hep-th/0205131</code></a></td><td>85.1</td><td>84.6-85.6</td><td>0.5</td><td>34-36</td><td>claim weights, active_unresolved</td></tr>
 </tbody></table></div>
 </section>
 <section class="section markdown-section"><h2>Cap-Bound Rows</h2>
 <div class="table-wrap audit-table"><table>
 <thead><tr><th>Rank</th><th>Paper</th><th>Score</th><th>Cap margin</th><th>Cap note</th></tr></thead>
 <tbody>
-<tr><td>50</td><td><a href="../papers/0706.3359.html"><code>0706.3359</code></a></td><td>55.0</td><td>8.0</td><td><code>core_claim_invalidated</code> cap</td></tr>
-<tr><td>47</td><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td>67.3</td><td>3.8</td><td>claim-level cap contribution</td></tr>
-<tr><td>48</td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td>65.1</td><td>1.4</td><td>claim-level cap contribution</td></tr>
+<tr><td>53</td><td><a href="../papers/0706.3359.html"><code>0706.3359</code></a></td><td>55.0</td><td>8.0</td><td><code>core_claim_invalidated</code> cap</td></tr>
+<tr><td>50</td><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a></td><td>67.3</td><td>3.8</td><td>claim-level cap contribution</td></tr>
+<tr><td>51</td><td><a href="../papers/1001.0785.html"><code>1001.0785</code></a></td><td>65.1</td><td>1.4</td><td>claim-level cap contribution</td></tr>
 </tbody></table></div>
 </section>
 <section class="section markdown-section"><h2>Stable Point-Estimate Anchors</h2>
@@ -141,17 +144,17 @@
 <tr><td>2</td><td><a href="../papers/hep-th_9601029.html"><code>hep-th/9601029</code></a></td><td>97.7</td><td>97.6-97.7</td></tr>
 <tr><td>8</td><td><a href="../papers/hep-th_0105097.html"><code>hep-th/0105097</code></a></td><td>93.5</td><td>93.4-93.5</td></tr>
 <tr><td>9</td><td><a href="../papers/hep-th_9802109.html"><code>hep-th/9802109</code></a></td><td>92.6</td><td>92.6-92.6</td></tr>
-<tr><td>14</td><td><a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a></td><td>90.9</td><td>90.9-90.9</td></tr>
-<tr><td>15</td><td><a href="../papers/hep-th_0510251.html"><code>hep-th/0510251</code></a></td><td>90.8</td><td>90.7-90.8</td></tr>
-<tr><td>16</td><td><a href="../papers/hep-th_0210114.html"><code>hep-th/0210114</code></a></td><td>90.6</td><td>90.5-90.6</td></tr>
-<tr><td>42</td><td><a href="../papers/1405.0412.html"><code>1405.0412</code></a></td><td>75.4</td><td>75.4-75.5</td></tr>
-<tr><td>46</td><td><a href="../papers/2006.06872.html"><code>2006.06872</code></a></td><td>71.1</td><td>71.1-71.6</td></tr>
-<tr><td>49</td><td><a href="../papers/2312.07820.html"><code>2312.07820</code></a></td><td>57.7</td><td>57.7-59.3</td></tr>
-<tr><td>50</td><td><a href="../papers/0706.3359.html"><code>0706.3359</code></a></td><td>55.0</td><td>55.0-55.0</td></tr>
+<tr><td>17</td><td><a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a></td><td>90.9</td><td>90.9-90.9</td></tr>
+<tr><td>18</td><td><a href="../papers/hep-th_0510251.html"><code>hep-th/0510251</code></a></td><td>90.8</td><td>90.7-90.8</td></tr>
+<tr><td>19</td><td><a href="../papers/hep-th_0210114.html"><code>hep-th/0210114</code></a></td><td>90.6</td><td>90.5-90.6</td></tr>
+<tr><td>45</td><td><a href="../papers/1405.0412.html"><code>1405.0412</code></a></td><td>75.4</td><td>75.4-75.5</td></tr>
+<tr><td>49</td><td><a href="../papers/2006.06872.html"><code>2006.06872</code></a></td><td>71.1</td><td>71.1-71.6</td></tr>
+<tr><td>52</td><td><a href="../papers/2312.07820.html"><code>2312.07820</code></a></td><td>57.7</td><td>57.7-59.3</td></tr>
+<tr><td>53</td><td><a href="../papers/0706.3359.html"><code>0706.3359</code></a></td><td>55.0</td><td>55.0-55.0</td></tr>
 </tbody></table></div>
 </section>
 <section class="section markdown-section"><h2>Decision</h2>
-<p>Keep v0.4.20 scores unchanged. The audit identifies local ordering sensitivity, not a scoring defect. Public interpretation should emphasize score clusters and executable cross-case guardrails over exact row numbers when adjacent gaps are small or local intervals overlap.</p>
+<p>Keep v0.4.21 scores unchanged. The audit identifies local ordering sensitivity, not a scoring defect. Public interpretation should emphasize score clusters and executable cross-case guardrails over exact row numbers when adjacent gaps are small or local intervals overlap.</p>
 </section>
 </main>
 <footer class="site-footer">
