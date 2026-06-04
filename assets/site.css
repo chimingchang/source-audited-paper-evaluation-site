@@ -121,6 +121,9 @@ dd { margin: 3px 0 0; font-weight: 600; overflow-wrap: anywhere; }
 .topic-anchor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
 .topic-anchor { border: 1px solid var(--line); border-radius: 8px; padding: 14px; background: #fff; min-width: 0; }
 .topic-anchor .facts { grid-template-columns: 1fr; gap: 8px; }
+.coverage-anchor h4 { margin-top: 12px; font-size: 13px; color: var(--muted); text-transform: uppercase; }
+.anchor-paper-list { display: grid; gap: 8px; margin-top: 10px; }
+.anchor-paper-list .compare-paper { border: 1px solid var(--line); border-radius: 6px; padding: 8px; background: var(--soft); min-width: 0; }
 .topic-table table { min-width: 1130px; }
 .coverage-table table { min-width: 760px; }
 .author-cell { min-width: 190px; color: #344054; }
