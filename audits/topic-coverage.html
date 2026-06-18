@@ -22,23 +22,23 @@
 <div class="metric"><span>Topic lenses</span><strong>6</strong></div>
 <div class="metric"><span>Ranked papers</span><strong>53</strong></div>
 <div class="metric"><span>Lens assignments</span><strong>72</strong></div>
-<div class="metric"><span>Coverage anchor roles</span><strong>20</strong></div>
+<div class="metric"><span>Coverage anchor roles</span><strong>21</strong></div>
 <div class="metric"><span>Anchor roles with ranked representatives</span><strong>17</strong></div>
-<div class="metric"><span>Explicit missing-control notes</span><strong>12</strong></div>
+<div class="metric"><span>Explicit missing-control notes</span><strong>21</strong></div>
 </section>
 
 <p class="notice canonical-notice">Generated view. The raw YAML/Markdown artifact is the canonical source.</p>
 <section class="section markdown-section">
-<p>Created: 2026-06-04</p>
+<p>Created: 2026-06-18</p>
 <p>Status: diagnostic freshness-controlled audit. This file does not change scores, topic assignments, scoring inputs, source audits, evidence packs, or public-ranking rows.</p>
 <p>Ranking: <code>2026-06-04-v0.4.21-public-ranking</code></p>
 <p>Inputs:</p>
 <ul class="compact-list">
 <li>Topic lens metadata: <code>metadata/topic_lenses.yaml</code></li>
 <li>Official ranking: <code>evaluations/rankings/2026-06-04-v0.4.21-public-ranking.yaml</code></li>
-<li>Expansion queue: <code>evaluations/review-queues/2026-06-04-v0.4.21-topic-coverage-expansion-queue.md</code></li>
+<li>Expansion queue: <code>evaluations/review-queues/2026-06-18-v0.4.22-topic-anchor-hardening-queue.md</code></li>
 </ul>
-<p>Purpose: make topic anchors auditable as source-credit and subfield-coverage controls. Anchor papers are not the highest-scoring papers by default; they are representatives selected because the lens would be misleading without that role being visible.</p>
+<p>Purpose: make topic anchors auditable as source-credit and subfield-coverage controls. Anchor papers are not the highest-scoring papers by default; they are representatives selected because the lens would be misleading without that role being visible. This v0.4.22 pass hardens anchor semantics after the v0.4.21 HRT/LM/FLM controls and explicitly keeps <code>0704.3719</code> as the Headrick-Takayanagi strong-subadditivity proof/control, not the HRT covariant proposal.</p>
 </section>
 <section class="section markdown-section"><h2>Summary</h2>
 <div class="table-wrap audit-table"><table>
@@ -47,9 +47,9 @@
 <tr><td>Topic lenses</td><td>6</td></tr>
 <tr><td>Ranked papers</td><td>53</td></tr>
 <tr><td>Lens assignments</td><td>72</td></tr>
-<tr><td>Coverage anchor roles</td><td>20</td></tr>
+<tr><td>Coverage anchor roles</td><td>21</td></tr>
 <tr><td>Anchor roles with ranked representatives</td><td>17</td></tr>
-<tr><td>Explicit missing-control notes</td><td>12</td></tr>
+<tr><td>Explicit missing-control notes</td><td>21</td></tr>
 <tr><td>Structural failures</td><td>0</td></tr>
 <tr><td>Planning warnings</td><td>1</td></tr>
 </tbody></table></div>
@@ -68,38 +68,39 @@
 <div class="table-wrap audit-table"><table>
 <thead><tr><th>Topic lens</th><th>Status</th><th>Rows</th><th>Score span</th><th>Anchor roles</th><th>Ranked anchor reps</th><th>Missing-control notes</th><th>Queue alignment</th></tr></thead>
 <tbody>
-<tr><td>AdS/CFT and Holography Roots</td><td><code>partial</code></td><td>20</td><td>99.0-55.0</td><td>3</td><td>10</td><td>1</td><td><a href="../papers/0705.0016.html"><code>0705.0016</code></a>, <a href="../papers/1304.4926.html"><code>1304.4926</code></a>, <a href="../papers/1307.2892.html"><code>1307.2892</code></a></td></tr>
-<tr><td>Black Holes, Entropy, and Information</td><td><code>partial</code></td><td>26</td><td>97.7-55.0</td><td>5</td><td>19</td><td>4</td><td><code>1207.3123</code>, <code>hep-th/9306083</code>, <code>0708.4025</code></td></tr>
-<tr><td>Higher Spin and Vector Models</td><td><code>seed</code></td><td>5</td><td>90.6-81.9</td><td>3</td><td>4</td><td>2</td><td><code>1112.1016</code>, <code>higher-spin-cs-vector-model-selection</code></td></tr>
-<tr><td>String Compactification, KKLT, and Swampland</td><td><code>partial</code></td><td>7</td><td>96.3-71.9</td><td>3</td><td>6</td><td>1</td><td><code>hep-th/0004134</code>, <code>hep-th/0112197</code>, <code>hep-th/0605264</code></td></tr>
-<tr><td>Amplitudes, Celestial, and Twistor Structures</td><td><code>seed</code></td><td>7</td><td>88.2-57.7</td><td>3</td><td>5</td><td>2</td><td><code>hep-th/0407214</code>, <code>1312.2229</code>, <code>1401.7026</code></td></tr>
-<tr><td>Supersymmetry, QFT Structure, and Defects</td><td><code>seed</code></td><td>7</td><td>95.8-75.4</td><td>3</td><td>6</td><td>2</td><td><code>classic-qft-root-selection</code>, <code>hep-th/9407087</code>, <code>hep-th/9411149</code></td></tr>
+<tr><td>AdS/CFT and Holography Roots</td><td><code>partial</code></td><td>20</td><td>99.0-55.0</td><td>3</td><td>10</td><td>3</td><td><code>1408.3203</code>, <code>1510.06441</code>, <code>0704.3719</code></td></tr>
+<tr><td>Black Holes, Entropy, and Information</td><td><code>partial</code></td><td>26</td><td>97.7-55.0</td><td>6</td><td>19</td><td>11</td><td><code>1207.3123</code>, <code>hep-th/9306083</code>, <code>0708.4025</code></td></tr>
+<tr><td>Higher Spin and Vector Models</td><td><code>seed</code></td><td>5</td><td>90.6-81.9</td><td>3</td><td>4</td><td>2</td><td><code>1112.1016</code></td></tr>
+<tr><td>String Compactification, KKLT, and Swampland</td><td><code>partial</code></td><td>7</td><td>96.3-71.9</td><td>3</td><td>6</td><td>1</td><td>no named queue target yet</td></tr>
+<tr><td>Amplitudes, Celestial, and Twistor Structures</td><td><code>seed</code></td><td>7</td><td>88.2-57.7</td><td>3</td><td>5</td><td>2</td><td>no named queue target yet</td></tr>
+<tr><td>Supersymmetry, QFT Structure, and Defects</td><td><code>seed</code></td><td>7</td><td>95.8-75.4</td><td>3</td><td>6</td><td>2</td><td><code>classic-qft-root-selection</code></td></tr>
 </tbody></table></div>
 </section>
 <section class="section markdown-section"><h2>Topic Findings</h2>
 <h3>AdS/CFT and Holography Roots</h3>
-<p>This is a partial lens; local comparisons are useful, but field completeness is not supported. 1 missing-control note(s) remain visible in <code>ads_cft_holography_roots</code>.</p>
+<p>This is a partial lens; local comparisons are useful, but field completeness is not supported. 3 missing-control note(s) remain visible in <code>ads_cft_holography_roots</code>.</p>
 <div class="table-wrap audit-table"><table>
 <thead><tr><th>Anchor role</th><th>Status</th><th>Ranked representatives</th><th>Still missing</th></tr></thead>
 <tbody>
 <tr><td>Duality roots</td><td><code>covered</code></td><td><a href="../papers/hep-th_9711200.html"><code>hep-th/9711200</code></a>, <a href="../papers/hep-th_9802109.html"><code>hep-th/9802109</code></a></td><td>none recorded</td></tr>
 <tr><td>AdS BPS black-hole controls</td><td><code>partial</code></td><td><a href="../papers/hep-th_0401042.html"><code>hep-th/0401042</code></a>, <a href="../papers/hep-th_0510251.html"><code>hep-th/0510251</code></a>, <a href="../papers/1511.04085.html"><code>1511.04085</code></a></td><td>none recorded</td></tr>
-<tr><td>Holographic entropy derivation controls</td><td><code>partial</code></td><td><a href="../papers/hep-th_0603001.html"><code>hep-th/0603001</code></a>, <a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a>, <a href="../papers/0705.0016.html"><code>0705.0016</code></a>, <a href="../papers/1304.4926.html"><code>1304.4926</code></a>, <a href="../papers/1307.2892.html"><code>1307.2892</code></a></td><td>QES derivation/formalism row and optional RT proof-control row.</td></tr>
+<tr><td>Holographic entropy derivation controls</td><td><code>partial</code></td><td><a href="../papers/hep-th_0603001.html"><code>hep-th/0603001</code></a>, <a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a>, <a href="../papers/0705.0016.html"><code>0705.0016</code></a>, <a href="../papers/1304.4926.html"><code>1304.4926</code></a>, <a href="../papers/1307.2892.html"><code>1307.2892</code></a></td><td>QES derivation/formalism row 1408.3203.; JLMS / bulk-relative-entropy bridge 1510.06441.; HT strong-subadditivity proof/control 0704.3719, not HRT.</td></tr>
 </tbody></table></div>
-<p>Next action: After the v0.4.21 HRT/LM/FLM controls, promote the next HEE-lineage controls deliberately: QES (<code>1408.3203</code>), JLMS (<code>1510.06441</code>), and optional RT proof-control (<code>0704.3719</code>) before broader bulk-reconstruction rows.</p>
-<p>Queue check: current expansion queue already names <a href="../papers/0705.0016.html"><code>0705.0016</code></a>, <a href="../papers/1304.4926.html"><code>1304.4926</code></a>, <a href="../papers/1307.2892.html"><code>1307.2892</code></a>, <code>1510.06441</code>, <code>0704.3719</code>.</p>
+<p>Next action: Promote the next HEE-lineage controls deliberately: QES (<code>1408.3203</code>), JLMS (<code>1510.06441</code>), and HT strong-subadditivity proof/control (<code>0704.3719</code>, not HRT) before broader bulk-reconstruction rows.</p>
+<p>Queue check: current expansion queue already names <code>1408.3203</code>, <code>1510.06441</code>, <code>0704.3719</code>.</p>
 <h3>Black Holes, Entropy, and Information</h3>
-<p>This is a partial lens; local comparisons are useful, but field completeness is not supported. 4 missing-control note(s) remain visible in <code>black_holes_entropy_information</code>.</p>
+<p>This is a partial lens; local comparisons are useful, but field completeness is not supported. 11 missing-control note(s) remain visible in <code>black_holes_entropy_information</code>.</p>
 <div class="table-wrap audit-table"><table>
 <thead><tr><th>Anchor role</th><th>Status</th><th>Ranked representatives</th><th>Still missing</th></tr></thead>
 <tbody>
-<tr><td>Microscopic entropy roots</td><td><code>covered</code></td><td><a href="../papers/hep-th_9601029.html"><code>hep-th/9601029</code></a>, <a href="../papers/hep-th_0401042.html"><code>hep-th/0401042</code></a>, <a href="../papers/hep-th_0510251.html"><code>hep-th/0510251</code></a>, <a href="../papers/1511.04085.html"><code>1511.04085</code></a></td><td>none recorded</td></tr>
-<tr><td>AdS BPS entropy-resolution cluster</td><td><code>covered</code></td><td><a href="../papers/1810.11442.html"><code>1810.11442</code></a>, <a href="../papers/1812.09613.html"><code>1812.09613</code></a>, <a href="../papers/1810.12067.html"><code>1810.12067</code></a></td><td>none recorded</td></tr>
-<tr><td>RT / island / Page-curve lineage</td><td><code>partial</code></td><td><a href="../papers/hep-th_0603001.html"><code>hep-th/0603001</code></a>, <a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a>, <a href="../papers/0705.0016.html"><code>0705.0016</code></a>, <a href="../papers/1304.4926.html"><code>1304.4926</code></a>, <a href="../papers/1307.2892.html"><code>1307.2892</code></a>, <a href="../papers/1905.08255.html"><code>1905.08255</code></a>, <a href="../papers/1905.08762.html"><code>1905.08762</code></a>, <a href="../papers/1911.11977.html"><code>1911.11977</code></a>, <a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td>QES formalism control before the island/Page-curve rows.</td></tr>
-<tr><td>Information-paradox predecessor controls</td><td><code>missing</code></td><td>none yet</td><td>Page information-in-radiation control.; AMPS firewall control.; Scrambling/retrieval control.</td></tr>
+<tr><td>Black-hole microstate counting roots</td><td><code>partial</code></td><td><a href="../papers/hep-th_9601029.html"><code>hep-th/9601029</code></a></td><td>More pre-AdS/CFT and non-D-brane microstate-counting controls.</td></tr>
+<tr><td>AdS BPS solution and counting controls</td><td><code>covered</code></td><td><a href="../papers/hep-th_0401042.html"><code>hep-th/0401042</code></a>, <a href="../papers/hep-th_0510251.html"><code>hep-th/0510251</code></a>, <a href="../papers/1511.04085.html"><code>1511.04085</code></a>, <a href="../papers/1810.11442.html"><code>1810.11442</code></a>, <a href="../papers/1812.09613.html"><code>1812.09613</code></a>, <a href="../papers/1810.12067.html"><code>1810.12067</code></a></td><td>none recorded</td></tr>
+<tr><td>HEE, QES, island, and Page-curve lineage</td><td><code>partial</code></td><td><a href="../papers/hep-th_0603001.html"><code>hep-th/0603001</code></a>, <a href="../papers/hep-th_0605073.html"><code>hep-th/0605073</code></a>, <a href="../papers/0705.0016.html"><code>0705.0016</code></a>, <a href="../papers/1304.4926.html"><code>1304.4926</code></a>, <a href="../papers/1307.2892.html"><code>1307.2892</code></a>, <a href="../papers/1905.08255.html"><code>1905.08255</code></a>, <a href="../papers/1905.08762.html"><code>1905.08762</code></a>, <a href="../papers/1911.11977.html"><code>1911.11977</code></a>, <a href="../papers/1911.12333.html"><code>1911.12333</code></a></td><td>QES formalism control 1408.3203 before the island/Page-curve rows.; JLMS / bulk-relative-entropy bridge 1510.06441.; HT strong-subadditivity proof/control 0704.3719, not HRT.</td></tr>
+<tr><td>Semiclassical information-paradox predecessor controls</td><td><code>missing</code></td><td>none yet</td><td>Page information-in-radiation control.; Hawking information-loss / evaporation predecessor control.; AMPS firewall control.; Scrambling/retrieval control.</td></tr>
+<tr><td>Complementarity, fuzzball, complexity, and retrieval controls</td><td><code>missing</code></td><td>none yet</td><td>Fuzzball or complementarity bibliography-selection audit.; Complexity/action/volume and ER=EPR-adjacent control selection.; Hayden-Preskill scrambling/retrieval control.</td></tr>
 <tr><td>Failed or cap-bound gravity claims</td><td><code>covered</code></td><td><a href="../papers/0809.4266.html"><code>0809.4266</code></a>, <a href="../papers/1001.0785.html"><code>1001.0785</code></a>, <a href="../papers/0706.3359.html"><code>0706.3359</code></a></td><td>none recorded</td></tr>
 </tbody></table></div>
-<p>Next action: After the v0.4.21 HRT/LM/FLM controls, add pre-island information controls before more island descendants: <code>1207.3123</code> and <code>hep-th/9306083</code> first; use <code>0708.4025</code> if scrambling/retrieval remains under-specified.</p>
+<p>Next action: Add pre-island information controls before more island descendants: <code>1207.3123</code> and <code>hep-th/9306083</code> first; use <code>0708.4025</code> if scrambling/retrieval remains under-specified.</p>
 <p>Queue check: current expansion queue already names <code>1207.3123</code>, <code>hep-th/9306083</code>, <code>0708.4025</code>.</p>
 <h3>Higher Spin and Vector Models</h3>
 <p>This is a seed lens; it should not be read as a subfield ranking. 2 missing-control note(s) remain visible in <code>higher_spin_vector_models</code>.</p>
@@ -111,7 +112,7 @@
 <tr><td>Triality and string bridge claims</td><td><code>partial</code></td><td><a href="../papers/1207.4485.html"><code>1207.4485</code></a></td><td>Chern-Simons vector-model roots and bosonization controls.</td></tr>
 </tbody></table></div>
 <p>Next action: Add <code>1112.1016</code> as the P0 constraint-theorem control, then run the Chern-Simons/vector-model bibliography-selection audit before scoring bridge rows.</p>
-<p>Queue check: current expansion queue already names <code>1112.1016</code>, <code>higher-spin-cs-vector-model-selection</code>.</p>
+<p>Queue check: current expansion queue already names <code>1112.1016</code>.</p>
 <h3>String Compactification, KKLT, and Swampland</h3>
 <p>This is a partial lens; local comparisons are useful, but field completeness is not supported. 1 missing-control note(s) remain visible in <code>string_compactification_swampland</code>.</p>
 <div class="table-wrap audit-table"><table>
@@ -122,7 +123,6 @@
 <tr><td>Swampland constraints</td><td><code>seed</code></td><td><a href="../papers/1806.08362.html"><code>1806.08362</code></a></td><td>Distance conjecture and de Sitter follow-up controls.</td></tr>
 </tbody></table></div>
 <p>Next action: Promote compactification controls as a later pass: <code>hep-th/0004134</code>, <code>hep-th/0112197</code>, and <code>hep-th/0605264</code> should stay separate from KKLT/LVS score movement.</p>
-<p>Queue check: current expansion queue already names <code>hep-th/0004134</code>, <code>hep-th/0112197</code>, <code>hep-th/0605264</code>.</p>
 <h3>Amplitudes, Celestial, and Twistor Structures</h3>
 <p>This is a seed lens; it should not be read as a subfield ranking. 2 missing-control note(s) remain visible in <code>amplitudes_celestial_twistor</code>.</p>
 <div class="table-wrap audit-table"><table>
@@ -133,7 +133,6 @@
 <tr><td>Modern amplitude geometry</td><td><code>missing</code></td><td>none yet</td><td>Amplituhedron, CHY, and double-copy rows.</td></tr>
 </tbody></table></div>
 <p>Next action: Use soft/asymptotic-symmetry and RSV controls as the next local pass: <code>1312.2229</code>, <code>1401.7026</code>, and <code>hep-th/0407214</code> before Grassmannian/amplituhedron rows.</p>
-<p>Queue check: current expansion queue already names <code>hep-th/0407214</code>, <code>1312.2229</code>, <code>1401.7026</code>.</p>
 <h3>Supersymmetry, QFT Structure, and Defects</h3>
 <p>This is a seed lens; it should not be read as a subfield ranking. 2 missing-control note(s) remain visible in <code>supersymmetry_qft_defects</code>.</p>
 <div class="table-wrap audit-table"><table>
@@ -144,7 +143,7 @@
 <tr><td>Classic supersymmetric QFT roots</td><td><code>missing</code></td><td>none yet</td><td>Seiberg-Witten and Seiberg-duality rows.</td></tr>
 </tbody></table></div>
 <p>Next action: Do a classic-QFT-root bibliography-selection audit before scoring Seiberg-Witten, Seiberg duality, or localization roots.</p>
-<p>Queue check: current expansion queue already names <code>classic-qft-root-selection</code>, <code>hep-th/9407087</code>, <code>hep-th/9411149</code>, <code>0712.2824</code>.</p>
+<p>Queue check: current expansion queue already names <code>classic-qft-root-selection</code>.</p>
 </section>
 <section class="section markdown-section"><h2>Planning Warnings</h2>
 <ul class="compact-list">
@@ -152,7 +151,7 @@
 </ul>
 </section>
 <section class="section markdown-section"><h2>Recommended Next Use</h2>
-<p>Use this audit before promoting any v0.4.21 candidate into scoring. A paper should enter intake only when it fills a named anchor role, a missing-control note, or a bibliography-selection audit target.</p>
+<p>Use this audit before promoting any v0.4.22 candidate into scoring. A paper should enter intake only when it fills a named anchor role, a missing-control note, or a bibliography-selection audit target.</p>
 </section>
 </main>
 <footer class="site-footer">
